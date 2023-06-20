@@ -24,8 +24,8 @@ const items = [
     gender : "남자",
     name: "인터내셔널 반팔 카라티",
     price: `69,000원`,
-    src: "./sub_img/item03.jpg",
-    srchover : "./sub_img/item03_hover.jpg",
+    src: "./img/sub_img/item03.jpg",
+    srchover : "./img/sub_img/item03_hover.jpg",
     color : "blue",
   },
   {
@@ -33,8 +33,8 @@ const items = [
     gender : "공용",
     name: "스포츠 인터내셔널 로고 반팔티",
     price: `49,000원`,
-    src: "./sub_img/item04.jpg",
-    srchover : "./sub_img/item04_hover.jpg",
+    src: "./img/sub_img/item04.jpg",
+    srchover : "./img/sub_img/item04_hover.jpg",
     color : "white",
   },
   {
@@ -42,8 +42,8 @@ const items = [
     gender : "공용",
     name: "인터내셔널 그래픽 반팔티",
     price: `49,000원`,
-    src: "./sub_img/item05.jpg",
-    srchover : "./sub_img/item05_hover.jpg",
+    src: "./img/sub_img/item05.jpg",
+    srchover : "./img/sub_img/item05_hover.jpg",
     color : "black",
   },
   {
@@ -51,8 +51,8 @@ const items = [
     gender : "공용",
     name: "레터링 그래픽 티셔츠",
     price: `49,000원`,
-    src: "./sub_img/item06.jpg",
-    srchover : "./sub_img/item06_hover.jpg",
+    src: "./img/sub_img/item06.jpg",
+    srchover : "./img/sub_img/item06_hover.jpg",
     color : "white",
   },
   {
@@ -60,8 +60,8 @@ const items = [
     gender : "남자",
     name: "핫써머 Joyful 나시티",
     price: `45,000원`,
-    src: "./sub_img/item07.jpg",
-    srchover : "./sub_img/item07_hover.jpg",
+    src: "./img/sub_img/item07.jpg",
+    srchover : "./img/sub_img/item07_hover.jpg",
     color : "black",
   },
   {
@@ -69,8 +69,8 @@ const items = [
     gender : "남자",
     name: "테니스 퍼포먼스 반팔티셔츠",
     price: `49,000원`,
-    src: "./sub_img/item08.jpg",
-    srchover : "./sub_img/item08_hover.jpg",
+    src: "./img/sub_img/item08.jpg",
+    srchover : "./img/sub_img/item08_hover.jpg",
     color : "black",
   },
   {
@@ -78,8 +78,8 @@ const items = [
     gender : "남자",
     name: "테니스 퍼포먼스 카라티셔츠",
     price: `79,000원`,
-    src: "./sub_img/item09.jpg",
-    srchover : "./sub_img/item09_hover.jpg",
+    src: "./img/sub_img/item09.jpg",
+    srchover : "./img/sub_img/item09_hover.jpg",
     color : "black"
   },
   {
@@ -87,8 +87,8 @@ const items = [
     gender : "공용",
     name: "테니스 라이프 스테디움 자켓",
     price: `149,000원`,
-    src: "./sub_img/item10.jpg",
-    srchover : "./sub_img/item10_hover.jpg",
+    src: "./img/sub_img/item10.jpg",
+    srchover : "./img/sub_img/item10_hover.jpg",
     color : "green"
   },
   {
@@ -96,8 +96,8 @@ const items = [
     gender : "공용",
     name: "테잎 오버핏 바람막이 자켓",
     price: `159,000원`,
-    src: "./sub_img/item11.jpg",
-    srchover : "./sub_img/item11_hover.jpg",
+    src: "./img/sub_img/item11.jpg",
+    srchover : "./img/sub_img/item11_hover.jpg",
     color : "grey"
   },
   {
@@ -105,8 +105,8 @@ const items = [
     gender : "공용",
     name: "테니스 라이프 카라 맨투맨",
     price: `99,000원`,
-    src: "./sub_img/item12.jpg",
-    srchover : "./sub_img/item12_hover.jpg",
+    src: "./img/sub_img/item12.jpg",
+    srchover : "./img/sub_img/item12_hover.jpg",
     color : "green"
   },
   {
@@ -114,8 +114,8 @@ const items = [
     gender : "공용",
     name: "베이직 리니어 후드집업",
     price: `79,000원`,
-    src: "./sub_img/item13.jpg",
-    srchover : "./sub_img/item13_hover.jpg",
+    src: "./img/sub_img/item13.jpg",
+    srchover : "./img/sub_img/item13_hover.jpg",
     color : "grey"
   },
   {
@@ -123,8 +123,8 @@ const items = [
     gender : "공용",
     name: "헤리티지 레귤러핏 케이블 스웨터",
     price: `109,000원`,
-    src: "./sub_img/item14.jpg",
-    srchover : "./sub_img/item14_hover.jpg",
+    src: "./img/sub_img/item14.jpg",
+    srchover : "./img/sub_img/item14_hover.jpg",
     color : "white"
   },
   {
@@ -132,8 +132,8 @@ const items = [
     gender : "공용",
     name: "테잎 오버핏 우븐 반바지",
     price: `79,000원`,
-    src: "./sub_img/item15.jpg",
-    srchover : "./sub_img/item15_hover.jpg",
+    src: "./img/sub_img/item15.jpg",
+    srchover : "./img/sub_img/item15_hover.jpg",
     color : "green"
   },
   {
@@ -141,8 +141,8 @@ const items = [
     gender : "공용",
     name: "아티스트 이진 반바지",
     price: `59,000원`,
-    src: "./sub_img/item16.jpg",
-    srchover : "./sub_img/item16_hover.jpg",
+    src: "./img/sub_img/item16.jpg",
+    srchover : "./img/sub_img/item16_hover.jpg",
     color : "beige"
   },
 
