@@ -183,7 +183,7 @@ iconSmall.addEventListener('click',()=>{
 
 /* [item] data 필터 / mouseover 썸네일변경 ------------------------------------------------- */
 
-import data from './data.js';
+import data from './js/data.js';
 const { items, info } = data;
 
 

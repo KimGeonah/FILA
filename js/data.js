@@ -15,8 +15,8 @@ const items = [
     gender : "남자",
     name: "컴포트핏 인터내셔널 반팔 카라티",
     price: `69,000원`,
-    src: "./sub_img/item02.jpg",
-    srchover : "./sub_img/item02_hover.jpg",
+    src: "./img/sub_img/item02.jpg",
+    srchover : "./img/sub_img/item02_hover.jpg",
     color : "beige",
   },
   {
