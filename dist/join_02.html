@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>회원가입 | FILA</title>
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="/favicon.08708974.png">
+
+    <!-- css-->
+    <link rel="stylesheet" href="/join_02.0ae1429e.css">
+
+    <!-- 폰트어썸 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- jquery 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+
+
+    <!-- 카카오AP -->
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+
+    <!-- JS 외부스크립트 연결  module 설정 -->
+    <script type="module" src="/join_02.0562348a.js" defer=""></script>
+
+
+
+
+<script src="/join_02.0ae1429e.js"></script></head>
+
+
+<body>
+
+
+    <section class="wing_banner">
+        <ul id="myList">
+          <li>
+            <i class="fas fa-search"></i>
+            <span class="txt_hide">검색</span>
+          </li>
+          <li>
+            <i class="fas fa-truck-pickup"></i>
+            <span class="txt_hide">주문/배송조회</span>
+          </li>
+          <li>
+            <i class="fas fa-shopping-cart"></i>
+            <span class="txt_hide">장바구니</span>
+          </li>
+          <li>
+            <i class="fas fa-heart"></i>
+            <span class="txt_hide">관심상품</span>
+          </li>
+          <li>
+            <i class="far fa-clock"></i>
+            <span class="txt_hide">최근본상품</span>
+          </li>
+          <li><span id="moveTop">
+            <i class="fas fa-chevron-up arrow"></i>
+          </span></li>
+          <li><span id="moveBottom">
+            <i class="fas fa-chevron-down arrow"></i>
+          </span></li>
+        </ul>
+      </section>
+      <!-- 윙배너 -->
+    
+    
+      <header class="header_outer">
+        <div class="header">
+    
+          <div class="logo">
+            <a href="/index.html"><img src="/logo_navy.5c6332a1.png" alt="logo_img"></a>
+          </div>
+    
+          <nav class="gnb">
+            <ul>
+              <li id="women"><a href="/sub.html">WOMEN</a></li>
+              <li id="men"><a href="/sub.html">MEN</a></li>
+              <li id="kids"><a href="/sub.html">KIDS</a></li>
+              <div class="bar"></div>
+              <li id="brand"><a href="/sub.html">BRAND</a></li>
+            </ul>
+          </nav>
+    
+          <nav class="icons">
+            <ul>
+              <li>
+                <a href="#"><img src="/icon01_navy.8afb5f45.svg" alt="icon"></a>
+              </li>
+              <li>
+                <a href="#"><img src="/icon02_navy.0b7c5ebb.svg" alt="icon"></a>
+              </li>
+              <li>
+                <a href="/login.html"><img src="/icon03_navy.d522e12b.svg" alt="icon"></a>
+              </li>
+              <li>
+                <a href="#"><img src="/icon04_navy.bf723f48.svg" alt="icon"></a>
+              </li>
+            </ul>
+          </nav>
+    
+        </div>
+      </header>
+      <!-- 기존 header -->
+    
+      <div class="lnb_menu_wrap">
+
+        <div class="lnb_menu" id="lnb_menu_01">
+    
+          <div class="lnb_header">
+    
+            <div class="logo">
+              <a href="/index.html"><img src="/logo_navy.5c6332a1.png" alt="logo_img"></a>
+            </div>
+    
+            <nav class="gnb">
+              <ul>
+                <li class="women"><a href="/sub.html">WOMEN</a></li>
+                <li class="men"><a href="/sub.html">MEN</a></li>
+                <li class="kids"><a href="/sub.html">KIDS</a></li>
+                <div class="bar"></div>
+                <li class="brand"><a href="/sub.html">BRAND</a></li>
+              </ul>
+            </nav>
+    
+            <nav class="icons">
+    
+              <ul>
+                <li>
+                  <a href="#"><img src="/icon01_navy.8afb5f45.svg" alt="icon"></a>
+                </li>
+    
+                <li>
+                  <a href="#"><img src="/icon02_navy.0b7c5ebb.svg" alt="icon"></a>
+                </li>
+                <li>
+                  <a href="/login.html"><img src="/icon03_navy.d522e12b.svg" alt="icon"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="/icon04_navy.bf723f48.svg" alt="icon"></a>
+                </li>
+              </ul>
+    
+            </nav>
+    
+          </div>
+    
+          <nav class="lnb_list" id="lnb_list_01">
+            <div class="lnb">
+              <div>
+                <h4>New & Featured</h4>
+                <ul>
+                  <li>신상품</li>
+                  <li>베스트</li>
+                  <li>스타일</li>
+                  <li>세일</li>
+                </ul>
+    
+              </div>
+    
+    
+    
+              <div>
+                <h4>의류</h4>
+                <ul>
+                  <li>아우터</li>
+                  <li>티셔츠</li>
+                  <li>반바지</li>
+                  <li>바람막이</li>
+                  <li>트레이닝 세트</li>
+                  <li>스윔웨어</li>
+                  <li>원피스</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>신발</h4>
+                <ul>
+                  <li>러닝화</li>
+                  <li>테니스화</li>
+                  <li>헤리티지</li>
+                  <li>샌들/슬리퍼</li>
+                  <li>라이프스타일</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>용품</h4>
+                <ul>
+                  <li>숄더백</li>
+                  <li>도트백</li>
+                  <li>백팩</li>
+                  <li>모자</li>
+                  <li>양말</li>
+                  <li>기타</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>언더웨어</h4>
+                <ul>
+                  <li>온라인 단독</li>
+                  <li>브라</li>
+                  <li>팬티</li>
+                  <li>커플</li>
+                  <li>이너웨어</li>
+                  <li>라이프웨어</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>스포츠</h4>
+                <ul>
+                  <li>러닝</li>
+                  <li>테니스</li>
+                  <li>골프</li>
+                </ul>
+              </div>
+    
+            </div>
+          </nav>
+    
+          <nav class="lnb_list" id="lnb_list_02">
+            <div class="lnb">
+              <div>
+                <h4>New & Featured</h4>
+                <ul>
+                  <li>신상품</li>
+                  <li>베스트</li>
+                  <li>스타일</li>
+                  <li>세일</li>
+                </ul>
+              </div>
+    
+    
+    
+              <div>
+                <h4>의류</h4>
+                <ul>
+                  <li>아우터</li>
+                  <li>티셔츠</li>
+                  <li>반바지</li>
+                  <li>바람막이</li>
+                  <li>트레이닝 세트</li>
+                  <li>스윔웨어</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>신발</h4>
+                <ul>
+                  <li>러닝화</li>
+                  <li>테니스화</li>
+                  <li>헤리티지</li>
+                  <li>샌들/슬리퍼</li>
+                  <li>라이프스타일</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>용품</h4>
+                <ul>
+                  <li>백팩</li>
+                  <li>메신저백</li>
+                  <li>모자</li>
+                  <li>양말</li>
+                  <li>기타</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>언더웨어</h4>
+                <ul>
+                  <li>런닝</li>
+                  <li>멀티팩</li>
+                  <li>드로즈</li>
+                  <li>브리프</li>
+                  <li>커플</li>
+                  <li>라이프웨어</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>스포츠</h4>
+                <ul>
+                  <li>러닝</li>
+                  <li>테니스</li>
+                  <li>골프</li>
+                </ul>
+              </div>
+    
+            </div>
+          </nav>
+    
+          <nav class="lnb_list" id="lnb_list_03">
+            <div class="lnb">
+              <div>
+                <h4>New & Featured</h4>
+                <ul>
+                  <li>신상품</li>
+                  <li>베스트</li>
+                  <li>스타일</li>
+                  <li>세일</li>
+                </ul>
+              </div>
+    
+    
+    
+              <div>
+                <h4>의류</h4>
+                <ul>
+                  <li>셋업</li>
+                  <li>티셔츠</li>
+                  <li>팬츠</li>
+                  <li>원피스</li>
+                  <li>스윔웨어</li>
+                  <li>플리스</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>신발</h4>
+                <ul>
+                  <li>토들러(160mm이하)</li>
+                  <li>리틀키즈(210mm이하)</li>
+                  <li>주니어(240mm이하)</li>
+                  <li>샌들</li>
+                  <li>아쿠아슈즈</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>용품</h4>
+                <ul>
+                  <li>책가방</li>
+                  <li>보조가방</li>
+                  <li>모자</li>
+                  <li>양말</li>
+                  <li>워터 스포츠</li>
+                  <li>기타</li>
+                </ul>
+              </div>
+    
+    
+    
+            </div>
+          </nav>
+    
+          <nav class="lnb_list" id="lnb_list_04">
+            <div class="lnb">
+    
+              <ul>
+                <li>
+                  <img src="/menu01.ee584383.jpg" alt="menu">
+                </li>
+                <h4>About FILA</h4>
+    
+              </ul>
+    
+              <ul>
+                <li>
+                  <img src="/menu02.97c2d738.jpg" alt="menu">
+                </li>
+                <h4>Collaboration</h4>
+    
+              </ul>
+    
+              <ul>
+                <li>
+                  <img src="/menu03.58cb12de.jpg" alt="menu">
+                </li>
+                <h4>Sustainability</h4>
+              </ul>
+    
+              <ul>
+                <li>
+                  <img src="/menu04.2979c184.jpg" alt="menu">
+                </li>
+                <h4>Athelets</h4>
+    
+              </ul>
+    
+              <ul>
+                <li>
+                  <img src="/menu05.d927b3e6.jpg" alt="menu">
+                </li>
+                <h4>Tennis Stories</h4>
+    
+              </ul>
+    
+            </div>
+          </nav>
+    
+        </div>
+    
+        <div class="lnb_menu" id="lnb_menu_02">
+          <div class="lnb_header">
+            <div class="logo">
+              <a href="#"><img src="/logo_navy.5c6332a1.png" alt="logo_img"></a>
+            </div>
+    
+            <nav class="gnb">
+              <ul>
+                <li class="women"><a href="/sub.html">WOMEN</a></li>
+                <li class="men"><a href="/sub.html">MEN</a></li>
+                <li class="kids"><a href="/sub.html">KIDS</a></li>
+                <div class="bar"></div>
+                <li class="brand"><a href="/sub.html">BRAND</a></li>
+              </ul>
+            </nav>
+    
+    
+            <nav class="icons">
+              <ul>
+                <li>
+                  <a href="#"><img src="/icon01_navy.8afb5f45.svg" alt="icon"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="/icon02_navy.0b7c5ebb.svg" alt="icon"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="/icon03_navy.d522e12b.svg" alt="icon"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="/icon04_navy.bf723f48.svg" alt="icon"></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+    
+          <nav class="lnb_list" id="lnb_list_02">
+            <div class="lnb">
+              <div>
+                <h4>New & Featured</h4>
+                <ul>
+                  <li>신상품</li>
+                  <li>베스트</li>
+                  <li>스타일</li>
+                  <li>세일</li>
+                </ul>
+              </div>
+    
+    
+    
+              <div>
+                <h4>의류</h4>
+                <ul>
+                  <li>아우터</li>
+                  <li>티셔츠</li>
+                  <li>반바지</li>
+                  <li>바람막이</li>
+                  <li>트레이닝 세트</li>
+                  <li>스윔웨어</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>신발</h4>
+                <ul>
+                  <li>러닝화</li>
+                  <li>테니스화</li>
+                  <li>헤리티지</li>
+                  <li>샌들/슬리퍼</li>
+                  <li>라이프스타일</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>용품</h4>
+                <ul>
+                  <li>백팩</li>
+                  <li>메신저백</li>
+                  <li>모자</li>
+                  <li>양말</li>
+                  <li>기타</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>언더웨어</h4>
+                <ul>
+                  <li>런닝</li>
+                  <li>멀티팩</li>
+                  <li>드로즈</li>
+                  <li>브리프</li>
+                  <li>커플</li>
+                  <li>라이프웨어</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>스포츠</h4>
+                <ul>
+                  <li>러닝</li>
+                  <li>테니스</li>
+                  <li>골프</li>
+                </ul>
+              </div>
+    
+            </div>
+          </nav>
+        </div>
+    
+        <div class="lnb_menu" id="lnb_menu_03">
+          <div class="lnb_header">
+            <div class="logo">
+              <a href="#"><img src="/logo_navy.5c6332a1.png" alt="logo_img"></a>
+            </div>
+    
+            <nav class="gnb">
+              <ul>
+                <li class="women"><a href="/sub.html">WOMEN</a></li>
+                <li class="men"><a href="/sub.html">MEN</a></li>
+                <li class="kids"><a href="/sub.html">KIDS</a></li>
+                <div class="bar"></div>
+                <li class="brand"><a href="/sub.html">BRAND</a></li>
+              </ul>
+            </nav>
+            <nav class="icons">
+              <ul>
+                <li>
+                  <a href="#"><img src="/icon01_navy.8afb5f45.svg" alt="icon"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="/icon02_navy.0b7c5ebb.svg" alt="icon"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="/icon03_navy.d522e12b.svg" alt="icon"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="/icon04_navy.bf723f48.svg" alt="icon"></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+    
+          <nav class="lnb_list" id="lnb_list_03">
+            <div class="lnb">
+              <div>
+                <h4>New & Featured</h4>
+                <ul>
+                  <li>신상품</li>
+                  <li>베스트</li>
+                  <li>스타일</li>
+                  <li>세일</li>
+                </ul>
+              </div>
+    
+    
+    
+              <div>
+                <h4>의류</h4>
+                <ul>
+                  <li>셋업</li>
+                  <li>티셔츠</li>
+                  <li>팬츠</li>
+                  <li>원피스</li>
+                  <li>스윔웨어</li>
+                  <li>플리스</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>신발</h4>
+                <ul>
+                  <li>토들러(160mm이하)</li>
+                  <li>리틀키즈(210mm이하)</li>
+                  <li>주니어(240mm이하)</li>
+                  <li>샌들</li>
+                  <li>아쿠아슈즈</li>
+                </ul>
+              </div>
+    
+              <div>
+                <h4>용품</h4>
+                <ul>
+                  <li>책가방</li>
+                  <li>보조가방</li>
+                  <li>모자</li>
+                  <li>양말</li>
+                  <li>워터 스포츠</li>
+                  <li>기타</li>
+                </ul>
+              </div>
+    
+    
+    
+            </div>
+          </nav>
+        </div>
+    
+        <div class="lnb_menu" id="lnb_menu_04">
+          <div class="lnb_header">
+            <div class="logo">
+              <a href="#"><img src="/logo_navy.5c6332a1.png" alt="logo_img"></a>
+            </div>
+    
+            <nav class="gnb">
+              <ul>
+                <li class="women"><a href="/sub.html">WOMEN</a></li>
+                <li class="men"><a href="/sub.html">MEN</a></li>
+                <li class="kids"><a href="/sub.html">KIDS</a></li>
+                <div class="bar"></div>
+                <li class="brand"><a href="/sub.html">BRAND</a></li>
+              </ul>
+            </nav>
+    
+    
+            <nav class="icons">
+              <ul>
+                <li>
+                  <a href="#"><img src="/icon01_navy.8afb5f45.svg" alt="icon"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="/icon02_navy.0b7c5ebb.svg" alt="icon"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="/icon03_navy.d522e12b.svg" alt="icon"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="/icon04_navy.bf723f48.svg" alt="icon"></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+    
+          <nav class="lnb_list" id="lnb_list_04">
+            <div class="lnb">
+    
+              <ul>
+                <li>
+                  <img src="/menu01.ee584383.jpg" alt="menu">
+                </li>
+                <h4>About FILA</h4>
+    
+              </ul>
+    
+              <ul>
+                <li>
+                  <img src="/menu02.97c2d738.jpg" alt="menu">
+                </li>
+                <h4>Collaboration</h4>
+    
+              </ul>
+    
+              <ul>
+                <li>
+                  <img src="/menu03.58cb12de.jpg" alt="menu">
+                </li>
+                <h4>Sustainability</h4>
+              </ul>
+    
+              <ul>
+                <li>
+                  <img src="/menu04.2979c184.jpg" alt="menu">
+                </li>
+                <h4>Athelets</h4>
+    
+              </ul>
+    
+              <ul>
+                <li>
+                  <img src="/menu05.d927b3e6.jpg" alt="menu">
+                </li>
+                <h4>Tennis Stories</h4>
+    
+              </ul>
+    
+            </div>
+          </nav>
+        </div>
+    
+    
+      </div>
+    <!-- 덮은 header -->
+
+    <aside class="page_stage">
+        <ul>
+            <li>
+                <div class="num">1</div>
+                <p>약관 동의</p>
+            </li>
+
+            <li>
+                <div class="num">2</div>
+                <p>정보 입력</p>
+            </li>
+
+            <li>
+                <div class="num">3</div>
+                <p>가입 완료</p>
+            </li>
+
+
+        </ul>
+
+    </aside><!-- page_stage -->
+
+    <main class="wrap">
+        <h2>회원 정보</h2>
+
+        <form action="" name="join">
+
+
+            <ul class="must_list">
+                <li>
+                    <label for="">아이디&nbsp;&nbsp; <span class="info">6-20자 영문/숫자 입력해주세요.</span></label>
+                    <br>
+                    <input type="text" class="id" maxlength="20" placeholder="6-20자 영문/숫자 입력해주세요." required="" autofocus="">
+                </li>
+
+                <li>
+                    <label for="">비밀번호&nbsp;&nbsp; <span class="info">*영문/숫자/특수문자 조합 8-16자 입력해주세요</span></label>
+                    <br>
+                    <input type="password" class="pw" maxlength="16" placeholder="영문/숫자/특수문자 조합 8-16자 입력해주세요." required="">
+                    <i class="fas fa-eye-slash"></i>
+                </li>
+
+                <li>
+                    <label for="">비밀번호 재확인&nbsp;&nbsp; <span class="info">*비밀번호가 일치하지 않습니다.</span></label>
+                    <br>
+                    <input type="password" class="pw_confirm" maxlength="16" placeholder="한번 더 입력해주세요." required="">
+                    <i class="fas fa-eye-slash"></i>
+                </li>
+            </ul>
+
+
+            <ul class="choice_list">
+
+                <li class="user_name">
+                    <label for="">이름&nbsp;&nbsp; <span class="info">*2자 이상 입력하세요</span></label>
+                    <br>
+                    <input type="text" class="name" maxlength="5" required="">
+                </li>
+
+
+                <li class="user_gender">
+                    <label for="title" class="title">성별&nbsp;&nbsp; </label>
+                    <br>
+
+                    <div class="gender_box">
+                        <input type="radio" id="men" name="gender" checked="">
+                        <label for="men">남자</label>
+
+                        <input type="radio" id="women" name="gender">
+                        <label for="women">여자</label>
+
+
+                    </div>
+
+                </li>
+
+
+
+                <li class="user_birth">
+                    <label for="">생년월일 <span class="choice_info">(선택)</span></label>
+                    <br>
+
+                    <div class="birth_box">
+                        <input type="text" class="year" maxlength="4" placeholder="년(4자)" required="">
+
+                        <select name="month" id="month">
+                            <option value="">월</option>
+                            <option value="">01월</option>
+                            <option value="">02월</option>
+                            <option value="">03월</option>
+                            <option value="">04월</option>
+                            <option value="">05월</option>
+                            <option value="">06월</option>
+                            <option value="">07월</option>
+                            <option value="">08월</option>
+                            <option value="">09월</option>
+                            <option value="">10월</option>
+                            <option value="">11월</option>
+                            <option value="">12월</option>
+                        </select>
+
+                        <select name="day" id="day">
+                            <option value="">일</option>
+                            <option value="">01일</option>
+                            <option value="">02일</option>
+                            <option value="">03일</option>
+                            <option value="">05일</option>
+                            <option value="">06일</option>
+                            <option value="">07일</option>
+                            <option value="">08일</option>
+                            <option value="">09일</option>
+                            <option value="">10일</option>
+                            <option value="">11일</option>
+                            <option value="">12일</option>
+                            <option value="">13일</option>
+                            <option value="">14일</option>
+                            <option value="">15일</option>
+                            <option value="">16일</option>
+                            <option value="">17일</option>
+                            <option value="">18일</option>
+                            <option value="">19일</option>
+                            <option value="">20일</option>
+                            <option value="">21일</option>
+                            <option value="">22일</option>
+                            <option value="">23일</option>
+                            <option value="">24일</option>
+                            <option value="">25일</option>
+                            <option value="">26일</option>
+                            <option value="">27일</option>
+                            <option value="">28일</option>
+                            <option value="">29일</option>
+                            <option value="">30일</option>
+                            <option value="">31일</option>
+                        </select>
+
+                    </div>
+
+
+
+                </li>
+
+
+                <li class="user_mail">
+                    <label for="">이메일 <span class="choice_info">(선택)</span></label>
+                    <br>
+
+                    <div class="mail_box">
+                        <input type="text" class="mail" required="">
+                        <label for="">@</label>
+
+                        <select name="mail" id="mail">
+                            <option value="">naver.com</option>
+                            <option value="">daum.net</option>
+                            <option value="">nate.com</option>
+                            <option value="">gmail.com</option>
+                            <option value="" class="mail_write">직접입력</option>
+                        </select>
+                    </div>
+                </li>
+
+
+
+                <li class="user_tel">
+                    <label for="">휴대전화 <span class="choice_info">(선택)</span> </label>
+                    <div class="tel_box">
+
+                        <select name="" id="num01">
+                            <option value="">010</option>
+                            <option value="">011</option>
+                            <option value="">017</option>
+                            <option value="">018</option>
+                        </select>
+
+                        <label for="">-</label>
+                        <input type="text" class="num_02" maxlength="4" required="">
+
+                        <label for="">-</label>
+
+                        <input type="text" class="num_03" maxlength="4" required="">
+                    </div>
+                </li>
+
+
+                <li class="user_interest">
+                    <label for="">관심분야&nbsp;&nbsp;<span class="choice_info">(선택)</span></label>
+                    <br>
+
+                    <div class="interest_box">
+                        <input type="checkbox" id="interest_01" name="interest">
+                        <label for="interest_01">라이프스타일</label>
+
+                        <input type="checkbox" id="interest_02" name="interest">
+                        <label for="interest_02">테니스웨어</label>
+
+                        <input type="checkbox" id="interest_03" name="interest">
+                        <label for="interest_03">골프웨어</label>
+
+                        <input type="checkbox" id="interest_04" name="interest">
+                        <label for="interest_04">아동복</label>
+                    </div>
+
+
+                </li>
+
+
+                <li class="user_adress">
+                    <label for="">주소&nbsp;&nbsp;<span class="choice_info">(선택)</span></label>
+                    <br>
+
+                    <ul>
+                        <li class="adress_01"> 
+                            <input type="text" id="sample6_postcode" placeholder="우편번호">
+                            <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
+                        </li>
+
+                        <input type="text" id="sample6_address" placeholder="주소"><br>
+
+                        <li class="adress_02">
+                            <input type="text" id="sample6_detailAddress" placeholder="상세주소">
+                            <input type="text" id="sample6_extraAddress" placeholder="참고항목">
+                        </li>
+
+                    </ul>
+
+
+
+
+                </li>
+
+
+            </ul>
+
+        </form>
+
+
+        <div class="btn">
+            <ul>
+                <li><a href="/join_01.html"><button type="button">이전</button></a></li>
+                <li><a href="/join_03.html" class="join_btn"><button type="button">가입하기</button></a></li>
+            </ul>
+        </div><!-- btn -->
+
+    </main><!-- wrap -->
+
+    <footer class="footer_outer">
+        <div class="footer">
+          <section class="footer_content_01">
+            <div class="footer_logo">
+              <img src="/logo_navy.5c6332a1.png" alt="footer_logo">
+            </div>
+    
+            <div class="footer_menu">
+              <div class="women menu_list">
+                <ul>
+                  <h5>WOMEN</h5>
+                  <li>의류</li>
+                  <li>신발</li>
+                  <li>용품</li>
+                  <li>베스트</li>
+                  <li>세일</li>
+                </ul>
+              </div>
+    
+              <div class="men menu_list">
+                <ul>
+                  <h5>MEN</h5>
+                  <li>의류</li>
+                  <li>신발</li>
+                  <li>용품</li>
+                  <li>베스트</li>
+                  <li>세일</li>
+                </ul>
+              </div>
+    
+              <div class="kids menu_list">
+                <ul>
+                  <h5>KIDS</h5>
+                  <li>의류</li>
+                  <li>신발</li>
+                  <li>용품</li>
+                  <li>베스트</li>
+                  <li>세일</li>
+                </ul>
+              </div>
+    
+              <div class="brand menu_list">
+                <ul>
+                  <h5>BRAND</h5>
+                  <li>About Fila</li>
+                  <li>Collaboration</li>
+                  <li>Sustainability</li>
+                  <li>Athelets</li>
+                  <li>Tennis Stories</li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="footer_sns">
+              <ul class="sns_list">
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+              </ul>
+    
+              <div class="search_box">
+                <input type="text" class="search" placeholder="검색어를 입력하세요">
+                <button type="submit" class="search_btn">검색</button>
+              </div>
+    
+              <div class="cs_box">
+                <div class="nation"><i class="fas fa-globe"></i>&nbsp;KOREA</div>
+    
+                <select name="site" id="site" onchange="window.open(value,'_target')">
+                  <option value="site">FAMILY SITE</option>
+    
+                  <option value="https://www.keds.co.kr/main/main.asp">
+                    KEDS 온라인스토어
+                  </option>
+                  <option value="https://www.zooyork.net/">
+                    ZOO YORK 온라인스토어
+                  </option>
+                  <option value="https://www.nicedocu.com/web/buyer/main/index.jsp">
+                    FILA 입찰공고
+                  </option>
+                  <option value="http://filaholdings.com/kr/main/index.asp">
+                    FILA Holdings
+                  </option>
+                </select>
+              </div>
+            </div>
+          </section>
+    
+          <div class="line"></div>
+    
+          <section class="footer_content_02">
+            <div class="company_info">
+              <div class="info">
+                <p class="adress_01">
+                  서울시 강동구 천호대고 1077 이스트센트럴타워 15층 - 18층
+                  휠라코리아(주) &nbsp;대표이사 : 김지헌
+                </p>
+    
+                <p class="adress_02">
+                  사업자 등록번호 : 716-81-01573 &nbsp; 통신판매업신고 : 제
+                  2020-서울강동-0160호 &nbsp; 개인정보 관리책임자 : 이학우
+                </p>
+    
+                <p class="info_txt">
+                  본 사이트의 상품이미지 저작권은 휠라코리아(주)에 있으며, 내용의
+                  무단복제를 금합니다.<br>콘텐츠 산업진흥법에 의한 콘텐츠
+                  보호안내 <span class="effet">자세히 보기</span>
+                </p>
+              </div>
+    
+              <ul class="list">
+                <li><a href="">공지사항</a></li>
+                <li><a href="">매장안내</a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">개설문의</a></li>
+                <li><a href="">FILA IR</a></li>
+              </ul>
+            </div>
+    
+            <div class="cs_info">
+              <button class="cs_btn">CS CENTER</button>
+              <div class="cs_tel">1577-3472</div>
+              <div class="cs_mail">filaonline@fila.com</div>
+              <div class="cs_time">평일 : 09시 - 18시 (공휴일 제외)</div>
+              <div class="cs_copy">© 2022 FILA Holdings Corp.</div>
+            </div>
+          </section>
+        </div>
+      </footer>
+      <!-- footer -->
+    
+
+
+
+    <script>function sample6_execDaumPostcode() {
+  new daum.Postcode({
+    oncomplete: function oncomplete(data) {
+      // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+      // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+      // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+      var addr = ''; // 주소 변수
+      var extraAddr = ''; // 참고항목 변수
+
+      //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+      if (data.userSelectedType === 'R') {
+        // 사용자가 도로명 주소를 선택했을 경우
+        addr = data.roadAddress;
+      } else {
+        // 사용자가 지번 주소를 선택했을 경우(J)
+        addr = data.jibunAddress;
+      }
+
+      // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+      if (data.userSelectedType === 'R') {
+        // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+        // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+        if (data.bname !== '' && /[동|로|가]$/g.test(data.bname)) {
+          extraAddr += data.bname;
+        }
+        // 건물명이 있고, 공동주택일 경우 추가한다.
+        if (data.buildingName !== '' && data.apartment === 'Y') {
+          extraAddr += extraAddr !== '' ? ', ' + data.buildingName : data.buildingName;
+        }
+        // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+        if (extraAddr !== '') {
+          extraAddr = ' (' + extraAddr + ')';
+        }
+        // 조합된 참고항목을 해당 필드에 넣는다.
+        document.getElementById("sample6_extraAddress").value = extraAddr;
+      } else {
+        document.getElementById("sample6_extraAddress").value = '';
+      }
+
+      // 우편번호와 주소 정보를 해당 필드에 넣는다.
+      document.getElementById('sample6_postcode').value = data.zonecode;
+      document.getElementById("sample6_address").value = addr;
+      // 커서를 상세주소 필드로 이동한다.
+      document.getElementById("sample6_detailAddress").focus();
+    }
+  }).open();
+}</script>
+
+
+</body>
+
+
+</html>

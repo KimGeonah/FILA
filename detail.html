@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 문서 제목 -->
+  <title>테니스 퍼포먼스 반팔티셔츠 | FILA</title>
+
+  <!-- 파비콘 변경 -->
+  <link rel="icon" href="./img/favicon.png" />
+
+  <!-- 구글폰트 : Noto sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- 폰트어썸 연결 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+
+  <!-- jquery 연결 -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+  <!-- swiper cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- gsap_scrollTo cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+
+  <!-- scss연결 -->
+  <!-- <link rel="stylesheet" href="./css/detail.scss" /> -->
+  <link rel="stylesheet" href="./css/detail.css" />
+
+  <!-- user_js연결 -->
+  <script src="./js/detail.js" defer></script>
+</head>
+
+<body>
+  <section class="wing_banner">
+    <ul id="myList">
+      <li>
+        <i class="fas fa-search"></i>
+        <span class="txt_hide">검색</span>
+      </li>
+      <li>
+        <i class="fas fa-truck-pickup"></i>
+        <span class="txt_hide">주문/배송조회</span>
+      </li>
+      <li>
+        <i class="fas fa-shopping-cart"></i>
+        <span class="txt_hide">장바구니</span>
+      </li>
+      <li>
+        <i class="fas fa-heart"></i>
+        <span class="txt_hide">관심상품</span>
+      </li>
+      <li>
+        <i class="far fa-clock"></i>
+        <span class="txt_hide">최근본상품</span>
+      </li>
+      <li><span id="moveTop">
+        <i class="fas fa-chevron-up arrow"></i>
+      </span></li>
+      <li><span id="moveBottom">
+        <i class="fas fa-chevron-down arrow"></i>
+      </span></li>
+    </ul>
+  </section>
+  <!-- 윙배너 -->
+
+
+  <header class="header_outer">
+    <div class="header">
+
+      <div class="logo">
+        <a href="./index.html"><img src="./img/logo_navy.png" alt="logo_img" /></a>
+      </div>
+
+      <nav class="gnb">
+        <ul>
+          <li id="women"><a href="./sub.html">WOMEN</a></li>
+          <li id="men"><a href="./sub.html">MEN</a></li>
+          <li id="kids"><a href="./sub.html">KIDS</a></li>
+          <div class="bar"></div>
+          <li id="brand"><a href="./sub.html">BRAND</a></li>
+        </ul>
+      </nav>
+
+      <nav class="icons">
+        <ul>
+          <li>
+            <a href="#"><img src="./img/icon01_navy.svg" alt="icon" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/icon02_navy.svg" alt="icon" /></a>
+          </li>
+          <li>
+            <a href="./login.html"><img src="./img/icon03_navy.svg" alt="icon" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/icon04_navy.svg" alt="icon" /></a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+  <!-- 기존 header -->
+
+
+
+  <div class="lnb_menu_wrap">
+
+    <div class="lnb_menu" id="lnb_menu_01">
+
+      <div class="lnb_header">
+
+        <div class="logo">
+          <a href="./index.html"><img src="./img/logo_navy.png" alt="logo_img" /></a>
+        </div>
+
+        <nav class="gnb">
+          <ul>
+            <li class="women"><a href="./sub.html">WOMEN</a></li>
+            <li class="men"><a href="./sub.html">MEN</a></li>
+            <li class="kids"><a href="./sub.html">KIDS</a></li>
+            <div class="bar"></div>
+            <li class="brand"><a href="./sub.html">BRAND</a></li>
+          </ul>
+        </nav>
+
+        <nav class="icons">
+
+          <ul>
+            <li>
+              <a href="#"><img src="./img/icon01_navy.svg" alt="icon" /></a>
+            </li>
+
+            <li>
+              <a href="#"><img src="./img/icon02_navy.svg" alt="icon" /></a>
+            </li>
+            <li>
+              <a href="./login.html"><img src="./img/icon03_navy.svg" alt="icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/icon04_navy.svg" alt="icon" /></a>
+            </li>
+          </ul>
+
+        </nav>
+
+      </div>
+
+      <nav class="lnb_list" id="lnb_list_01">
+        <div class="lnb">
+          <div>
+            <h4>New & Featured</h4>
+            <ul>
+              <li>신상품</li>
+              <li>베스트</li>
+              <li>스타일</li>
+              <li>세일</li>
+            </ul>
+
+          </div>
+
+
+
+          <div>
+            <h4>의류</h4>
+            <ul>
+              <li>아우터</li>
+              <li>티셔츠</li>
+              <li>반바지</li>
+              <li>바람막이</li>
+              <li>트레이닝 세트</li>
+              <li>스윔웨어</li>
+              <li>원피스</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>신발</h4>
+            <ul>
+              <li>러닝화</li>
+              <li>테니스화</li>
+              <li>헤리티지</li>
+              <li>샌들/슬리퍼</li>
+              <li>라이프스타일</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>용품</h4>
+            <ul>
+              <li>숄더백</li>
+              <li>도트백</li>
+              <li>백팩</li>
+              <li>모자</li>
+              <li>양말</li>
+              <li>기타</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>언더웨어</h4>
+            <ul>
+              <li>온라인 단독</li>
+              <li>브라</li>
+              <li>팬티</li>
+              <li>커플</li>
+              <li>이너웨어</li>
+              <li>라이프웨어</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>스포츠</h4>
+            <ul>
+              <li>러닝</li>
+              <li>테니스</li>
+              <li>골프</li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+
+      <nav class="lnb_list" id="lnb_list_02">
+        <div class="lnb">
+          <div>
+            <h4>New & Featured</h4>
+            <ul>
+              <li>신상품</li>
+              <li>베스트</li>
+              <li>스타일</li>
+              <li>세일</li>
+            </ul>
+          </div>
+
+
+
+          <div>
+            <h4>의류</h4>
+            <ul>
+              <li>아우터</li>
+              <li>티셔츠</li>
+              <li>반바지</li>
+              <li>바람막이</li>
+              <li>트레이닝 세트</li>
+              <li>스윔웨어</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>신발</h4>
+            <ul>
+              <li>러닝화</li>
+              <li>테니스화</li>
+              <li>헤리티지</li>
+              <li>샌들/슬리퍼</li>
+              <li>라이프스타일</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>용품</h4>
+            <ul>
+              <li>백팩</li>
+              <li>메신저백</li>
+              <li>모자</li>
+              <li>양말</li>
+              <li>기타</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>언더웨어</h4>
+            <ul>
+              <li>런닝</li>
+              <li>멀티팩</li>
+              <li>드로즈</li>
+              <li>브리프</li>
+              <li>커플</li>
+              <li>라이프웨어</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>스포츠</h4>
+            <ul>
+              <li>러닝</li>
+              <li>테니스</li>
+              <li>골프</li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+
+      <nav class="lnb_list" id="lnb_list_03">
+        <div class="lnb">
+          <div>
+            <h4>New & Featured</h4>
+            <ul>
+              <li>신상품</li>
+              <li>베스트</li>
+              <li>스타일</li>
+              <li>세일</li>
+            </ul>
+          </div>
+
+
+
+          <div>
+            <h4>의류</h4>
+            <ul>
+              <li>셋업</li>
+              <li>티셔츠</li>
+              <li>팬츠</li>
+              <li>원피스</li>
+              <li>스윔웨어</li>
+              <li>플리스</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>신발</h4>
+            <ul>
+              <li>토들러(160mm이하)</li>
+              <li>리틀키즈(210mm이하)</li>
+              <li>주니어(240mm이하)</li>
+              <li>샌들</li>
+              <li>아쿠아슈즈</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>용품</h4>
+            <ul>
+              <li>책가방</li>
+              <li>보조가방</li>
+              <li>모자</li>
+              <li>양말</li>
+              <li>워터 스포츠</li>
+              <li>기타</li>
+            </ul>
+          </div>
+
+
+
+        </div>
+      </nav>
+
+      <nav class="lnb_list" id="lnb_list_04">
+        <div class="lnb">
+
+          <ul>
+            <li>
+              <img src="./img/menu01.jpg" alt="menu">
+            </li>
+            <h4>About FILA</h4>
+
+          </ul>
+
+          <ul>
+            <li>
+              <img src="./img/menu02.jpg" alt="menu">
+            </li>
+            <h4>Collaboration</h4>
+
+          </ul>
+
+          <ul>
+            <li>
+              <img src="./img/menu03.jpg" alt="menu">
+            </li>
+            <h4>Sustainability</h4>
+          </ul>
+
+          <ul>
+            <li>
+              <img src="./img/menu04.jpg" alt="menu">
+            </li>
+            <h4>Athelets</h4>
+
+          </ul>
+
+          <ul>
+            <li>
+              <img src="./img/menu05.jpg" alt="menu">
+            </li>
+            <h4>Tennis Stories</h4>
+
+          </ul>
+
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="lnb_menu" id="lnb_menu_02">
+      <div class="lnb_header">
+        <div class="logo">
+          <a href="#"><img src="./img/logo_navy.png" alt="logo_img" /></a>
+        </div>
+
+        <nav class="gnb">
+          <ul>
+            <li class="women"><a href="./sub.html">WOMEN</a></li>
+            <li class="men"><a href="./sub.html">MEN</a></li>
+            <li class="kids"><a href="./sub.html">KIDS</a></li>
+            <div class="bar"></div>
+            <li class="brand"><a href="./sub.html">BRAND</a></li>
+          </ul>
+        </nav>
+
+
+        <nav class="icons">
+          <ul>
+            <li>
+              <a href="#"><img src="./img/icon01_navy.svg" alt="icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/icon02_navy.svg" alt="icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/icon03_navy.svg" alt="icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/icon04_navy.svg" alt="icon" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav class="lnb_list" id="lnb_list_02">
+        <div class="lnb">
+          <div>
+            <h4>New & Featured</h4>
+            <ul>
+              <li>신상품</li>
+              <li>베스트</li>
+              <li>스타일</li>
+              <li>세일</li>
+            </ul>
+          </div>
+
+
+
+          <div>
+            <h4>의류</h4>
+            <ul>
+              <li>아우터</li>
+              <li>티셔츠</li>
+              <li>반바지</li>
+              <li>바람막이</li>
+              <li>트레이닝 세트</li>
+              <li>스윔웨어</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>신발</h4>
+            <ul>
+              <li>러닝화</li>
+              <li>테니스화</li>
+              <li>헤리티지</li>
+              <li>샌들/슬리퍼</li>
+              <li>라이프스타일</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>용품</h4>
+            <ul>
+              <li>백팩</li>
+              <li>메신저백</li>
+              <li>모자</li>
+              <li>양말</li>
+              <li>기타</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>언더웨어</h4>
+            <ul>
+              <li>런닝</li>
+              <li>멀티팩</li>
+              <li>드로즈</li>
+              <li>브리프</li>
+              <li>커플</li>
+              <li>라이프웨어</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>스포츠</h4>
+            <ul>
+              <li>러닝</li>
+              <li>테니스</li>
+              <li>골프</li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+
+    <div class="lnb_menu" id="lnb_menu_03">
+      <div class="lnb_header">
+        <div class="logo">
+          <a href="#"><img src="./img/logo_navy.png" alt="logo_img" /></a>
+        </div>
+
+        <nav class="gnb">
+          <ul>
+            <li class="women"><a href="./sub.html">WOMEN</a></li>
+            <li class="men"><a href="./sub.html">MEN</a></li>
+            <li class="kids"><a href="./sub.html">KIDS</a></li>
+            <div class="bar"></div>
+            <li class="brand"><a href="./sub.html">BRAND</a></li>
+          </ul>
+        </nav>
+        <nav class="icons">
+          <ul>
+            <li>
+              <a href="#"><img src="./img/icon01_navy.svg" alt="icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/icon02_navy.svg" alt="icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/icon03_navy.svg" alt="icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/icon04_navy.svg" alt="icon" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav class="lnb_list" id="lnb_list_03">
+        <div class="lnb">
+          <div>
+            <h4>New & Featured</h4>
+            <ul>
+              <li>신상품</li>
+              <li>베스트</li>
+              <li>스타일</li>
+              <li>세일</li>
+            </ul>
+          </div>
+
+
+
+          <div>
+            <h4>의류</h4>
+            <ul>
+              <li>셋업</li>
+              <li>티셔츠</li>
+              <li>팬츠</li>
+              <li>원피스</li>
+              <li>스윔웨어</li>
+              <li>플리스</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>신발</h4>
+            <ul>
+              <li>토들러(160mm이하)</li>
+              <li>리틀키즈(210mm이하)</li>
+              <li>주니어(240mm이하)</li>
+              <li>샌들</li>
+              <li>아쿠아슈즈</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>용품</h4>
+            <ul>
+              <li>책가방</li>
+              <li>보조가방</li>
+              <li>모자</li>
+              <li>양말</li>
+              <li>워터 스포츠</li>
+              <li>기타</li>
+            </ul>
+          </div>
+
+
+
+        </div>
+      </nav>
+    </div>
+
+    <div class="lnb_menu" id="lnb_menu_04">
+      <div class="lnb_header">
+        <div class="logo">
+          <a href="#"><img src="./img/logo_navy.png" alt="logo_img" /></a>
+        </div>
+
+        <nav class="gnb">
+          <ul>
+            <li class="women"><a href="./sub.html">WOMEN</a></li>
+            <li class="men"><a href="./sub.html">MEN</a></li>
+            <li class="kids"><a href="./sub.html">KIDS</a></li>
+            <div class="bar"></div>
+            <li class="brand"><a href="./sub.html">BRAND</a></li>
+          </ul>
+        </nav>
+
+
+        <nav class="icons">
+          <ul>
+            <li>
+              <a href="#"><img src="./img/icon01_navy.svg" alt="icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/icon02_navy.svg" alt="icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/icon03_navy.svg" alt="icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/icon04_navy.svg" alt="icon" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav class="lnb_list" id="lnb_list_04">
+        <div class="lnb">
+
+          <ul>
+            <li>
+              <img src="./img/menu01.jpg" alt="menu">
+            </li>
+            <h4>About FILA</h4>
+
+          </ul>
+
+          <ul>
+            <li>
+              <img src="./img/menu02.jpg" alt="menu">
+            </li>
+            <h4>Collaboration</h4>
+
+          </ul>
+
+          <ul>
+            <li>
+              <img src="./img/menu03.jpg" alt="menu">
+            </li>
+            <h4>Sustainability</h4>
+          </ul>
+
+          <ul>
+            <li>
+              <img src="./img/menu04.jpg" alt="menu">
+            </li>
+            <h4>Athelets</h4>
+
+          </ul>
+
+          <ul>
+            <li>
+              <img src="./img/menu05.jpg" alt="menu">
+            </li>
+            <h4>Tennis Stories</h4>
+
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+
+
+  </div>
+<!-- 덮은 header -->
+
+
+  <section class="goods_box_outer">
+
+    <div class="goods_box">
+
+      <div class="goods_img">
+        <video src="//assetscdn.styleship.com/assets/filaweb1/data/productVideo/01/FS2RSF2321M_WHI.mp4" autoplay loop
+          muted></video>
+        <img src="./img/detail_img/main01.jpg" alt="main">
+
+
+
+
+
+        <img src="./img/detail_img/banner05.jpg" alt="banner" class="banner">
+      </div>
+
+
+
+      <div class="goods_info">
+
+
+        <div class="title_box infobox">
+          <ul class="tag">
+            <li>남녀공용</li>
+            <li>레귤러핏</li>
+            <li>테니스</li>
+          </ul>
+
+          <h1>테니스 퍼포먼스 반팔티셔츠</h1>
+        </div>
+
+        <div class="content_box infobox">
+          자외선 차단 기능이 우수하고, 흡습속건 및 차열효과를 지닌 수입 피케 소재(RAY BLOCK)입니다.
+          <br><br>
+          땀이 많이 발생하는 테니스 플레이 시 쾌적하게 착용이 가능하며
+          FILA의 시그니처인 F박스 와펜과 스트라이프 요꼬 테이프 디자인의 깔끔한 스타일의 아이템입니다.
+          <br>
+
+          <!--  <button class="content_btn">상품정보고시</button> -->
+        </div>
+
+
+        <div class="color_box infobox">
+          <h4>컬러</h4>
+          <ul>
+            <li class="on"><img src="./img/detail_img/color01.jpg" alt="color"></li>
+            <li><img src="./img/detail_img/color02.jpg" alt="color"></li>
+            <li><img src="./img/detail_img/color03.jpg" alt="color"></li>
+          </ul>
+        </div>
+
+        <div class="size_box infobox">
+          <ul class="size_title">
+            <li>
+              <h4>사이즈</h4>
+            </li>
+            <li class="stock">매장 재고 현황</li>
+          </ul>
+
+          <ul class="size_type">
+            <li>
+              <input type="radio" id="size90" class="size_radio" name="size_radio" checked>
+              <label for="size90" class="size_label">90(S)</label>
+            </li>
+
+            <li>
+              <input type="radio" id="size95" class="size_radio" name="size_radio">
+              <label for="size95" class="size_label">95(M)</label>
+            </li>
+
+            <li>
+              <input type="radio" id="size100" class="size_radio" name="size_radio">
+              <label for="size100" class="size_label">100(L)</label>
+            </li>
+
+            <li>
+              <input type="radio" id="size105" class="size_radio" name="size_radio">
+              <label for="size105" class="size_label">105(XL)</label>
+            </li>
+
+            <li>
+              <input type="radio" id="size110" class="size_radio" name="size_radio">
+              <label for="size110" class="size_label">110(2XL)</label>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="quantity_box infobox">
+          <h4>수량</h4>
+
+          <ul>
+            <li><i class="fas fa-minus"></i></li>
+            <li>1</li>
+            <li><i class="fas fa-plus"></i></li>
+          </ul>
+
+        </div>
+
+        <div class="price_box infobox">
+          <ul>
+            <li>
+              <h4>주문 금액</h4>
+            </li>
+            <li>
+              <h4>49,000원</h4>
+            </li>
+          </ul>
+        </div>
+
+        <div class="buy_box infobox">
+
+          <ul>
+            <li><i class="fas fa-heart"></i></li>
+            <li><i class="fas fa-shopping-basket"></i></li>
+            <li class="buy">BUY</li>
+          </ul>
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+    </div>
+
+  </section>
+  <!-- goods -->
+
+
+
+  <section class="info_tab">
+
+    <!-- 탭 메뉴버튼 -->
+    <div class="tab_menu">
+      <div class="tab active01">실측 사이즈</div>
+      <div class="tab">상품 정보고시</div>
+      <div class="tab">교환 및 반품</div>
+      <div class="tab">배송 정보</div>
+    </div>
+
+
+    <!-- 탭 컨텐츠 -->
+    <div class="tab_content">
+
+      <div class="content content01 active01">
+        <section class="fit_guide">
+          <h3>핏 가이드</h3>
+          <ul>
+            <li class="choose">
+              <img src="./img/detail_img/info01.jpg" alt="fit">
+              <p class="tit">레귤러</p>
+              <p class="txt">어깨선이 잘 맞고 깔끔한 라인의 핏
+            </li>
+
+            <li>
+              <img src="./img/detail_img/info02.jpg" alt="fit">
+              <p class="tit">컴포트</p>
+              <p class="txt">어깨선이 여유있는 편안한 라인의 핏
+            </li>
+
+            <li>
+              <img src="./img/detail_img/info03.jpg" alt="fit">
+              <p class="tit">오버</p>
+              <p class="txt">넉넉하고 박시한 무드의 핏
+            </li>
+          </ul>
+        </section>
+
+        <section class="info_guide">
+          <h3>정보</h3>
+
+          <div class="graph_box">
+
+            <p class="tit">신축성</p>
+
+            <div class="graph graph01">
+              <div class="first check">없음</div>
+              <div class="mid check">보통</div>
+              <div class="last check">좋음</div>
+            </div>
+
+            <p class="tit">두께감</p>
+            <div class="graph graph02">
+              <div class="first check">없음</div>
+              <div class="mid check">보통</div>
+              <div class="last check">좋음</div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <section class="size_guide">
+          <h3>실측사이즈</h3>
+          <p class="cm">단위 : cm</p>
+          <dl class="main">
+            <dt>사이즈</dt>
+            <dd>90(S)</dd>
+            <dd>95(M)</dd>
+            <dd>100(L)</dd>
+            <dd>105(XL)</dd>
+            <dd>110(2XL)</dd>
+          </dl>
+
+          <dl>
+            <dt>총기장</dt>
+            <dd>66</dd>
+            <dd>68</dd>
+            <dd>70</dd>
+            <dd>72</dd>
+            <dd>74</dd>
+          </dl>
+
+          <dl>
+            <dt>어깨</dt>
+            <dd>40</dd>
+            <dd>42</dd>
+            <dd>44.4</dd>
+            <dd>46</dd>
+            <dd>48.5</dd>
+          </dl>
+
+          <dl>
+            <dt>가슴둘레</dt>
+            <dd>94</dd>
+            <dd>99</dd>
+            <dd>104</dd>
+            <dd>109</dd>
+            <dd>115</dd>
+          </dl>
+
+          <dl>
+            <dt>팔길이</dt>
+            <dd>20.3</dd>
+            <dd>20.9</dd>
+            <dd>21.5</dd>
+            <dd>22.1</dd>
+            <dd>22.9</dd>
+          </dl>
+
+          <dl>
+            <dt>밑단</dt>
+            <dd>92</dd>
+            <dd>97</dd>
+            <dd>102</dd>
+            <dd>107</dd>
+            <dd>113</dd>
+          </dl>
+
+        </section>
+
+      </div>
+
+      <div class="content content02">
+        <dl>
+          <dt>상품명</dt>
+          <dd>테니스 퍼포먼스 반팔티셔츠</dd>
+        </dl>
+
+        <dl>
+          <dt>상품코드</dt>
+          <dd>1100FS2RSF2321MWHI</dd>
+        </dl>
+
+        <dl>
+          <dt>제품소재</dt>
+          <dd>폴리에스터 100%</dd>
+        </dl>
+
+
+        <dl>
+          <dt>색상</dt>
+          <dd>WHI(화이트)</dd>
+        </dl>
+
+        <dl>
+          <dt>사이즈</dt>
+          <dd>090,095,100,105,110</dd>
+        </dl>
+
+        <dl>
+          <dt>제조국</dt>
+          <dd>베트남</dd>
+        </dl>
+
+        <dl>
+          <dt>제조년월</dt>
+          <dd>2023.02</dd>
+        </dl>
+
+        <dl>
+          <dt>제조사</dt>
+          <dd>휠라코리아(주)</dd>
+        </dl>
+
+        <dl>
+          <dt>세탁방법 및 취급시 주의사항</dt>
+          <dd>상세 취급방법 제품라벨 참조</dd>
+        </dl>
+
+        <dl>
+          <dt>품질보증기준</dt>
+          <dd>관련법 및 소비자 분쟁해결기준에 따름</dd>
+        </dl>
+
+
+
+      </div>
+
+      <div class="content content03 ">
+
+        <dl>
+          <dt>환불</dt>
+          <dd>
+            · 반품을 원하시는 상품이 물류센터로 입고 후 검수과정을 거친후 환불이 진행됩니다.
+            <br>
+            · 환불 승인후 영업일 기준 3~5일 이내 결제 수단으로 환불처리 됩니다.
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>교환</dt>
+          <dd>
+            · 1:1 문의 혹은 대표번호로 교환 접수<br>
+            · [상품수거-물류로 상품입고-상품검수-교환상품 재출고]의 과정에서 최소 열흘정도 소요될 수 있습니다.<br>
+            · 교환 진행 도중 상품이 품절될 경우 교환 상품의 출고가 어려워 환불안내 받으실 수도 있습니다.
+
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>주문 변경 요청</dt>
+          <dd>
+            · 출고 전 : 주문서 수정은 불가하기에 사이즈, 색상 변경 원하실 경우 취소후 재구매 해주셔야합니다.<br>
+            · 출고 후 : 이미 출고가 완료된 경우에는 주문취소가 불가하기에 수령 후 반품 접수 진행주셔야합니다.<br>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>반품 신청 방법</dt>
+          <dd>
+
+            · 회원
+            <br>
+            [주문/배송조회] → [취소/반품] → [반품 수량 선택] → [반품 사유 등록]</li>
+            <br><br>
+
+            · 비회원
+            <br>
+            [로그인 창 하단 비회원 주문 조회] → [취소/반품] → [반품 수량 선택] → [반품 사유 등록]</li>
+          </dd>
+        </dl>
+
+
+        <dl>
+          <dt>교환 / 반품비용</dt>
+          <dd>
+            휠라 온라인스토어는 최상의 서비스 제공을 위하여 무료 교환/반품 서비스를 제공하고 있습니다.
+            <br>
+
+            (단, 제주도, 도서산간지역 추가배송비 발생)</dd>
+        </dl>
+
+        <dl>
+          <dt>교환 / 반품 시 유의사항</dt>
+          <dd>
+
+            · 제품수령 후 7일 이내에 착용하지 않은 상품일 경우 교환 / 반품이 가능합니다.<br>
+            · 맞교환은 불가능하며, 상품이 물류센터에 도착하면 요청하신 교환 상품이 배송됩니다.<br>
+            · 다른 상품으로 교환을 원하실 경우, 기존 상품 반품 후 재주문을 해주셔야 합니다.<br>
+            · 지정된 택배사 이외 임의의 택배사 착불로 제품을 보내실 경우 반송될 수 있는 점 양해 바랍니다.
+
+          </dd>
+        </dl>
+
+
+        <dl>
+          <dt>교환 / 반품 시 수거 진행</dt>
+          <dd>
+            · 구매하신 제품의 반품 신청 접수 후 CJ 대한통운에서 3일 내 (영업일 기준) 방문 수거가 진행됩니다.<br>
+            · 반품 접수가 없이 임의로 발송하시는 경우, 정확한 반품처리가 어려울 수 있습니다.<br>
+            · 수거 시 확인되는 반송장 번호는 환불이 모두 진행될 때까지 보관해주시기 바랍니다.<br>
+          </dd>
+        </dl>
+
+
+
+
+        <dl>
+          <dt>교환 / 반품이 불가능한 경우</dt>
+          <dd>
+            · 고객님의 단순변심으로 인한 교환/반품 요청이 상품을 수령한 날로부터 7일을 경과한 경우<br>
+            · 고객님의 책임 있는 사유로 상품 등의 가치가 파손되거나 훼손된 경우<br>
+            · 상품의 구성품을 분실하였거나 취급 부주의로 인한 훼손, 고장, 오염된 경우<br>
+          </dd>
+        </dl>
+
+
+      </div>
+
+      <div class="content content04">
+
+        <dl>
+          <dt>오늘도착 배송서비스</dt>
+          <dd>
+            <p class="box"> <strong>가능한 사이즈</strong> &nbsp; 100, 105</p>
+            · 오전 11시 50분 이전 주문 시 오늘도착 가능한 <strong>멤버쉽 전용 서비스</strong>입니다.<br>
+            · 배송가능 지역은 서울 전지역만 가능하며, 주문서 작성 페이지에서 확인 가능합니다.<br>
+            · 상품의 크기 및 수량에 따라 박스당 5,000원의 배송비가 발생됩니다.<br>
+            · 기상악화(폭설, 폭우), 천재지변에 의한 당일 배송이 불가할수 있습니다.
+
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>배송사</dt>
+          <dd>
+            · CJ택배 1588-1255<br>
+            · 전국배송가능 (해외배송 서비스는 현재 제공되지 않습니다.)
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>배송기간</dt>
+          <dd>
+            · 결제 후 대략 영업일 3~5일 이내 배송이 완료됩니다.<br>
+            · 상품의 배송 진행 상황은 [마이페이지] > [주문배송조회] 에서 확인하실 수 있습니다.<br>
+            · 특정 상품의 경우 재고 상황에 따라 도착일이 지연될 수 있습니다.<br>
+            · 매장 발송이 섞여있는 주문 건의 경우 물류센터와 매장에서 상품이 각각 발송될 수 있습니다.<br>
+          </dd>
+        </dl>
+
+
+      </div>
+    </div>
+
+  </section>
+  <!-- info_tab -->
+
+
+  <section class="review_tab">
+
+    <div class="tab_menu">
+      <div class="tab active02 ">상품 리뷰</div>
+      <div class="tab ">상품 문의</div>
+    </div>
+
+    <div class="tab_content">
+
+
+
+
+      <!-- 리뷰 탭 전체 box -->
+      <div class="content content01 active02">
+
+
+
+        <!-- 상단 안내문구 박스 -->
+        <div class="box">
+          <p>구매확정 후 <span>30일 이내에</span> 상품평 작성 시, <span>최대 2,000 마일리지의 혜택을 드립니다.</span></p>
+          <p>작성하신 상품평에 대한 마일리지 지급은 작성 후 15일 이내로 적립됩니다.</p>
+        </div>
+        
+
+
+
+
+
+        <!-- 중간 별점 박스 -->
+        <section class="review_box">
+
+
+          <div class="review_img">
+            <img src="./img/detail_img/review.jpg" alt="review">
+          </div>
+
+
+
+          <div class="review_stars">
+            <h1><i class="fas fa-star"></i> 4.8</h1>
+            <p><span>85%</span>의 구매자가 이 상품을 좋아합니다.</p>
+            <p class="view">
+              <i class="fas fa-eye"></i>
+              <span>154명</span>이 함께 제품을 보고있어요.
+              </p>
+          </div>
+
+
+
+          <div class="bar"></div>
+
+          <div class="review_summary">
+
+
+              <ul>
+
+                <li>
+                  <p class="title highlight">아주 좋아요</p>
+                  <div id="myProgress1" class="progress">
+                    <div id="myBar1" class="bar"></div>
+                  </div>
+                  <p class="num highlight">90건</p>
+                </li>
+
+
+                <li>
+                  <p class="title">좋아요</p>
+                  <div id="myProgress2" class="progress">
+                    <div id="myBar2" class="bar"></div>
+                  </div>
+                  <p class="num">80건</p>
+                </li>
+
+
+                <li>
+                  <p class="title">보통이에요</p>
+                  <div id="myProgress3" class="progress">
+                    <div id="myBar3" class="bar"></div>
+                  </div>
+                  <p class="num">5건</p>
+                </li>
+
+
+                <li>
+                  <p class="title">그냥 그래요</p>
+                  <div id="myProgress4" class="progress">
+                    <div id="myBar4" class="bar"></div>
+                  </div>
+                  <p class="num">11건</p>
+                </li>
+
+
+                <li>
+                  <p class="title">별로에요</p>
+                  <div id="myProgress5" class="progress">
+                    <div id="myBar5" class="bar"></div>
+                  </div>
+                  <p class="num">7건</p>
+                </li>
+
+
+              </ul>
+
+
+
+          </div>
+
+
+
+
+
+
+        </section>
+
+        <h4>REVIEW</h4>
+
+
+
+
+
+        <div class="comment-section">
+
+          <ul id="comment-bar">
+            <li class="bar1">등록일</li>
+            <div class="bar"></div>
+            <li class="bar2">이름</li>
+            <div class="bar"></div>
+            <li class="bar3">평점</li>
+            <div class="bar"></div>
+            <li class="bar4">리뷰</li>
+            <div class="bar"></div>
+            <li class="bar5">삭제</li>
+          </ul>
+
+          <div id="comment_inform">
+            <p>사용후기를 기다리고 있어요 <i class="far fa-comment-dots"></i></p>
+            </div>
+
+          <div class="line"></div>
+          <ul id="comment-list">
+
+          </ul>
+
+
+
+
+          <form id="comment-form">
+
+            <div class="comment_push">
+
+            <p class="name">
+              <label for="nickname-input">이름</label>
+              <input type="text" placeholder="필수 입력" id="nickname-input" maxlength="3">
+            </p>
+
+            <p class="star">
+              <label for="rating-input">평점</label>
+              <select id="rating-input">
+                <option value="">선택하세요</option>
+                <option value="아주 좋아요">아주 좋아요</option>
+                <option value="좋아요">좋아요</option>
+                <option value="보통이에요">보통이에요</option>
+                <option value="그냥 그래요">그냥 그래요</option>
+                <option value="별로에요">별로에요</option>
+              </select>
+
+
+            </p>
+            <button type="submit" class="comment-btn">등록</button>
+
+
+          </div>
+
+
+          <section class="comment-text"> 
+              <textarea id="comment-input" placeholder="내용을 적어주세요." maxlength="30"></textarea>
+
+          </section>
+
+
+
+
+
+
+
+            
+          </form>
+
+
+
+
+
+        </div>
+        <!-- 댓글 박스 -->
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="content content02 ">
+        <img src="./img/detail_img/review_icon.png" alt="icon">
+        <h4>상품 관련 궁금한 점이 있으신가요?</h4>
+        <ul>
+          <li>상품에 대한 문의를 남겨 주시면 회원 정보에 등록된 메일 주소로 답변이 발송됩니다.</li>
+          <li>주문/배송/반품 등 일반 문의는 1:1 문의를 이용해 주시기 바랍니다.</li>
+          <li>상품에 대한 허위 정보, 광고성 글은 사전 통보 없이 임의로 삭제될 수 있습니다.</li>
+        </ul>
+
+        <div class="btn_box">
+          <button>자주 묻는 질문</button>
+          <button>1:1문의</button>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- review_tab -->
+
+
+
+  <footer class="footer_outer">
+    <div class="footer">
+      <section class="footer_content_01">
+        <div class="footer_logo">
+          <img src="./img/logo_navy.png" alt="footer_logo" />
+        </div>
+
+        <div class="footer_menu">
+          <div class="women menu_list">
+            <ul>
+              <h5>WOMEN</h5>
+              <li>의류</li>
+              <li>신발</li>
+              <li>용품</li>
+              <li>베스트</li>
+              <li>세일</li>
+            </ul>
+          </div>
+
+          <div class="men menu_list">
+            <ul>
+              <h5>MEN</h5>
+              <li>의류</li>
+              <li>신발</li>
+              <li>용품</li>
+              <li>베스트</li>
+              <li>세일</li>
+            </ul>
+          </div>
+
+          <div class="kids menu_list">
+            <ul>
+              <h5>KIDS</h5>
+              <li>의류</li>
+              <li>신발</li>
+              <li>용품</li>
+              <li>베스트</li>
+              <li>세일</li>
+            </ul>
+          </div>
+
+          <div class="brand menu_list">
+            <ul>
+              <h5>BRAND</h5>
+              <li>About Fila</li>
+              <li>Collaboration</li>
+              <li>Sustainability</li>
+              <li>Athelets</li>
+              <li>Tennis Stories</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer_sns">
+          <ul class="sns_list">
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-youtube"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+          </ul>
+
+          <div class="search_box">
+            <input type="text" class="search" placeholder="검색어를 입력하세요" />
+            <button type="submit" class="search_btn">검색</button>
+          </div>
+
+          <div class="cs_box">
+            <div class="nation"><i class="fas fa-globe"></i>&nbsp;KOREA</div>
+
+            <select name="site" id="site" onchange="window.open(value,'_target')">
+              <option value="site">FAMILY SITE</option>
+
+              <option value="https://www.keds.co.kr/main/main.asp">
+                KEDS 온라인스토어
+              </option>
+              <option value="https://www.zooyork.net/">
+                ZOO YORK 온라인스토어
+              </option>
+              <option value="https://www.nicedocu.com/web/buyer/main/index.jsp">
+                FILA 입찰공고
+              </option>
+              <option value="http://filaholdings.com/kr/main/index.asp">
+                FILA Holdings
+              </option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <div class="line"></div>
+
+      <section class="footer_content_02">
+        <div class="company_info">
+          <div class="info">
+            <p class="adress_01">
+              서울시 강동구 천호대고 1077 이스트센트럴타워 15층 - 18층
+              휠라코리아(주) &nbsp;대표이사 : 김지헌
+            </p>
+
+            <p class="adress_02">
+              사업자 등록번호 : 716-81-01573 &nbsp; 통신판매업신고 : 제
+              2020-서울강동-0160호 &nbsp; 개인정보 관리책임자 : 이학우
+            </p>
+
+            <p class="info_txt">
+              본 사이트의 상품이미지 저작권은 휠라코리아(주)에 있으며, 내용의
+              무단복제를 금합니다.<br />콘텐츠 산업진흥법에 의한 콘텐츠
+              보호안내 <span class="effet">자세히 보기</span>
+            </p>
+          </div>
+
+          <ul class="list">
+            <li><a href="">공지사항</a></li>
+            <li><a href="">매장안내</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개설문의</a></li>
+            <li><a href="">FILA IR</a></li>
+          </ul>
+        </div>
+
+        <div class="cs_info">
+          <button class="cs_btn">CS CENTER</button>
+          <div class="cs_tel">1577-3472</div>
+          <div class="cs_mail">filaonline@fila.com</div>
+          <div class="cs_time">평일 : 09시 - 18시 (공휴일 제외)</div>
+          <div class="cs_copy">© 2022 FILA Holdings Corp.</div>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <!-- footer -->
+</body>
+
+</html>
