@@ -6,8 +6,8 @@ const items = [
     gender : "공용",
     name: "인터내셔널 스몰 로고 티셔츠",
     price: `39,000원`,
-    src: "./sub_img/item01.jpg",
-    srchover : "./sub_img/item01_hover.jpg",
+    src: "./img/sub_img/item01.jpg",
+    srchover : "./img/sub_img/item01_hover.jpg",
     color : "black",
   }, 
   {

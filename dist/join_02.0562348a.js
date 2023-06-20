@@ -129,8 +129,8 @@ var items = [{
   gender: "공용",
   name: "인터내셔널 스몰 로고 티셔츠",
   price: "39,000\uC6D0",
-  src: "./sub_img/item01.jpg",
-  srchover: "./sub_img/item01_hover.jpg",
+  src: "./img/sub_img/item01.jpg",
+  srchover: "./img/sub_img/item01_hover.jpg",
   color: "black"
 }, {
   id: "item02",
@@ -544,7 +544,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51229" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52078" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
