@@ -127,11 +127,11 @@ exports.default = void 0;
 var items = [{
   id: "item01",
   gender: "공용",
-  name: "인터내셔널 스몰 로고 티셔츠",
-  price: "39,000\uC6D0",
+  name: "테니스 퍼포먼스 반팔티셔츠",
+  price: "49,000\uC6D0",
   src: "./img/sub_img/item01.jpg",
   srchover: "./img/sub_img/item01_hover.jpg",
-  color: "black"
+  color: "white"
 }, {
   id: "item02",
   gender: "남자",
@@ -450,7 +450,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53228" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55120" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

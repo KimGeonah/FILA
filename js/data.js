@@ -4,11 +4,11 @@ const items = [
   {
     id: "item01",
     gender : "공용",
-    name: "인터내셔널 스몰 로고 티셔츠",
-    price: `39,000원`,
+    name: "테니스 퍼포먼스 반팔티셔츠",
+    price: `49,000원`,
     src: "./img/sub_img/item01.jpg",
     srchover : "./img/sub_img/item01_hover.jpg",
-    color : "black",
+    color : "white",
   }, 
   {
     id: "item02",
