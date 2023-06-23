@@ -141,16 +141,15 @@ icons.click(function(){
 
 const iconLarge = document.querySelector('.sort_icon .fa-th-large')
 const iconSmall = document.querySelector('.sort_icon .fa-th')
+const body = document.querySelector('.items_box')
+const changePrice = document.querySelectorAll('.info_box .info .price')
 const item = document.querySelectorAll('.items_box .item ')
 const itemPhoto = document.querySelectorAll('.items_box .item .photo')
-const body = document.querySelector('.items_box')
 const changeName = document.querySelectorAll('.info_box .info .name')
-const changePrice = document.querySelectorAll('.info_box .info .price')
 
 
 
 iconLarge.addEventListener('click',()=>{
-    body.style.height = '2700px';
     item.forEach((el) => {
         el.style.width = '340px';
     });
@@ -163,7 +162,6 @@ iconLarge.addEventListener('click',()=>{
 });
 
 iconSmall.addEventListener('click',()=>{
-    body.style.height = '2300px';
     item.forEach((el)=>{
         el.style.width ='268px'
     })
@@ -198,24 +196,24 @@ for(let i=0; i<itemList.length; i++){
     const itemGender = item.querySelector('.info_box .info .gender')
     const itemName = item.querySelector('.info_box .info .name')
     const itemPrice = item.querySelector('.info_box .info .price')
-
-
-
+  
+    //썸네일 이미지
     itemPhoto.setAttribute('src',items[i].src)
 
-
+    //변경되는 썸네일 이미지
     itemPhoto.addEventListener('mouseover', function() {
         itemPhoto.setAttribute('src',items[i].srchover)
 
     });
 
+    //마우스 나갈때 기본이미지 변경
     itemPhoto.addEventListener('mouseout', function() {
         itemPhoto.setAttribute('src',items[i].src)
     });
 
 
 
-
+    //서브페이지 데이터정보 받아옴
     itemGender.textContent = items[i].gender
     itemName.textContent = items[i].name
     itemPrice.textContent = items[i].price
@@ -226,9 +224,10 @@ for(let i=0; i<itemList.length; i++){
 
 
 
+
 /* pagination  ------------------------------------------------- */
 
-const pagination = document.querySelectorAll('.pagination ul li')
+/* const pagination = document.querySelectorAll('.pagination ul li')
 
 pagination.forEach(function(page) {
     page.addEventListener('click', function() {
@@ -239,6 +238,201 @@ pagination.forEach(function(page) {
         this.classList.add('page_active')
     })
 })
+ */
+
+
+
+
+
+
+
+ //[sort:바닐라] 카테코리 필터  -------------------------------------------------
+
+
+ const allChk01 = document.querySelector('#all_chk01'); //아우터
+ const allChk02 = document.querySelector('#all_chk02'); //티셔츠
+ const allChk03 = document.querySelector('#all_chk03'); //반바지
+ const allChk04 = document.querySelector('#all_chk04'); //바람막이
+ const allChk05 = document.querySelector('#all_chk05'); //트레이닝 세트
+ const allChk06 = document.querySelector('#all_chk06'); //스윔웨어
+ 
+ 
+ function updateAll() {
+   for (let i = 0; i < itemList.length; i++) {
+     const item = itemList[i];
+     if (allChk01.checked || allChk02.checked || allChk03.checked || allChk04.checked || allChk05.checked|| allChk06.checked) {
+       if ((allChk01.checked && items[i].type === '아우터') ||
+           (allChk02.checked && items[i].type === '티셔츠') ||
+           (allChk03.checked && items[i].type === '반바지') ||
+           (allChk04.checked && items[i].type === '바람막이') ||
+           (allChk05.checked && items[i].type === '트레이닝')||
+           (allChk06.checked && items[i].type === '스윔웨어')) {
+         item.style.display = 'block';
+       } else {
+         item.style.display = 'none';
+       }
+     } else {
+       item.style.display = 'block';
+     }
+   }
+ }
+ 
+ allChk01.addEventListener('click', updateAll);
+ allChk02.addEventListener('click', updateAll);
+ allChk03.addEventListener('click', updateAll);
+ allChk04.addEventListener('click', updateAll);
+ allChk05.addEventListener('click', updateAll);
+ allChk06.addEventListener('click', updateAll);
+ 
+
+
+
+ 
+ //[sort:바닐라] 스포츠 필터  -------------------------------------------------
+
+ const sportChk01 = document.querySelector('#sport_chk01'); //테니스
+ const sportChk02 = document.querySelector('#sport_chk02'); //러닝
+ const sportChk03 = document.querySelector('#sport_chk03'); //라이프스타일
+ 
+ 
+ 
+ function updateSport() {
+   for (let i = 0; i < itemList.length; i++) {
+     const item = itemList[i];
+     if (sportChk01.checked || sportChk02.checked || sportChk03.checked) {
+       if ((sportChk01.checked && items[i].sport === '테니스') ||
+           (sportChk02.checked && items[i].sport === '러닝') ||
+           (sportChk03.checked && items[i].sport === '라이프스타일')) {
+         item.style.display = 'block';
+       } else {
+         item.style.display = 'none';
+       }
+     } else {
+       item.style.display = 'block';
+     }
+   }
+ }
+ 
+ sportChk01.addEventListener('click', updateSport);
+ sportChk02.addEventListener('click', updateSport);
+ sportChk03.addEventListener('click', updateSport);
+ 
+
+
+
+ //[sort:바닐라] 색상 필터  -------------------------------------------------
+
+ const color01 = document.querySelector('#color_01'); //white
+ const color02 = document.querySelector('#color_02'); //beige
+ const color03 = document.querySelector('#color_03'); //grey
+ const color04 = document.querySelector('#color_04'); //green
+ const color05 = document.querySelector('#color_05'); //blue
+ const color06 = document.querySelector('#color_06'); //black
+ 
+
+ 
+  function updateColor() {
+   for (let i = 0; i < itemList.length; i++) {
+     const item = itemList[i];
+     if (color01.checked || color02.checked || color03.checked || color04.checked || color05.checked|| color06.checked) {
+       if ((color01.checked && items[i].color === 'white') ||
+           (color02.checked && items[i].color === 'beige') ||
+           (color03.checked && items[i].color === 'grey') ||
+           (color04.checked && items[i].color === 'green') ||
+           (color05.checked && items[i].color === 'blue')||
+           (color06.checked && items[i].color === 'black')) {
+         item.style.display = 'block';
+       } else {
+         item.style.display = 'none';
+       }
+     } else {
+       item.style.display = 'block';
+     }
+   }
+ }
+ 
+ color01.addEventListener('click', updateColor);
+ color02.addEventListener('click', updateColor);
+ color03.addEventListener('click', updateColor);
+ color04.addEventListener('click', updateColor);
+ color05.addEventListener('click', updateColor);
+ color06.addEventListener('click', updateColor);
+ 
+
+ //[sort:바닐라] 스타일 필터  -------------------------------------------------
+
+ const styleChk01 = document.querySelector('#style_01'); //레귤러핏
+ const styleChk02 = document.querySelector('#style_02'); //컴포트핏
+ const styleChk03 = document.querySelector('#style_03'); //오버핏
+ 
+ 
+ 
+ function updateStyle() {
+   for (let i = 0; i < itemList.length; i++) {
+     const item = itemList[i];
+     if (styleChk01.checked || styleChk02.checked || styleChk03.checked) {
+       if ((styleChk01.checked && items[i].style === '레귤러핏') ||
+           (styleChk02.checked && items[i].style === '컴포트핏') ||
+           (styleChk03.checked && items[i].style === '오버핏')) {
+         item.style.display = 'block';
+       } else {
+         item.style.display = 'none';
+       }
+     } else {
+       item.style.display = 'block';
+     }
+   }
+ }
+ 
+ styleChk01.addEventListener('click', updateStyle);
+ styleChk02.addEventListener('click', updateStyle);
+ styleChk03.addEventListener('click', updateStyle);
+
+
+
+
+
+ //[sort:바닐라] 가격 필터  -------------------------------------------------
+
+
+
+
+ const priceChk01 = document.querySelector('#price_chk01'); //39,000이하
+ const priceChk02 = document.querySelector('#price_chk02'); //39 - 49
+ const priceChk03 = document.querySelector('#price_chk03'); //49 - 59
+ const priceChk04 = document.querySelector('#price_chk04'); //59 - 79
+ const priceChk05 = document.querySelector('#price_chk05'); //79 이상
+ 
+
+ 
+ 
+ function updateprice() {
+   for (let i = 0; i < itemList.length; i++) {
+     const item = itemList[i];
+     if (priceChk01.checked || priceChk02.checked || priceChk03.checked || priceChk04.checked|| priceChk05.checked) {
+       if ((priceChk01.checked && items[i].priceNum <=39000) ||
+           (priceChk02.checked && 39000 < items[i].priceNum && items[i].priceNum <= 49000) ||
+           (priceChk03.checked && 49000 < items[i].priceNum && items[i].priceNum <= 59000) ||
+           (priceChk04.checked && 59000 < items[i].priceNum && items[i].priceNum <= 79000) ||
+           (priceChk05.checked && 79000 < items[i].priceNum )) {
+         item.style.display = 'block';
+       } else {
+         item.style.display = 'none';
+       }
+     } else {
+       item.style.display = 'block';
+     }
+   }
+ }
+ 
+ priceChk01.addEventListener('click', updateprice);
+ priceChk02.addEventListener('click', updateprice);
+ priceChk03.addEventListener('click', updateprice);
+ priceChk04.addEventListener('click', updateprice);
+ priceChk05.addEventListener('click', updateprice);5
+
+
+
 
 
 
@@ -275,44 +469,39 @@ pagination.forEach(function(page) {
    }
  }
  
- genderChk01.addEventListener('change', updateGender);
- genderChk02.addEventListener('change', updateGender);
+ genderChk01.addEventListener('click', updateGender);
+ genderChk02.addEventListener('click', updateGender);
  
  
  
- //[sort:바닐라] color 필터  -------------------------------------------------
 
- const color01 = document.querySelector('#color_01'); //white
- const color02 = document.querySelector('#color_02'); //beige
- const color03 = document.querySelector('#color_03'); //grey
- const color04 = document.querySelector('#color_04'); //green
- const color05 = document.querySelector('#color_05'); //blue
- const color06 = document.querySelector('#color_06'); //black
- 
- function updateColor() {
-   for (let i = 0; i < itemList.length; i++) {
-     const item = itemList[i];
-     if (color01.checked || color02.checked || color03.checked || color04.checked || color05.checked|| color06.checked) {
-       if ((color01.checked && items[i].color === 'white') ||
-           (color02.checked && items[i].color === 'beige') ||
-           (color03.checked && items[i].color === 'grey') ||
-           (color04.checked && items[i].color === 'green') ||
-           (color05.checked && items[i].color === 'blue')||
-           (color06.checked && items[i].color === 'black')) {
-         item.style.display = 'block';
-       } else {
-         item.style.display = 'none';
-       }
-     } else {
-       item.style.display = 'block';
-     }
-   }
- }
- 
- color01.addEventListener('change', updateColor);
- color02.addEventListener('change', updateColor);
- color03.addEventListener('change', updateColor);
- color04.addEventListener('change', updateColor);
- color05.addEventListener('change', updateColor);
- color06.addEventListener('change', updateColor);
- 
+
+
+
+
+
+
+
+
+  //[sort:바닐라] 카테코리 필터 초기화  -------------------------------------------------
+
+
+  
+  const resetButtons = [
+    { btn: document.querySelector('.list_all h3 i'), chk: document.querySelectorAll('.list_all .all_chk') },
+    { btn: document.querySelector('.list_sport h3 i'), chk: document.querySelectorAll('.list_sport .sport_chk') },
+    { btn: document.querySelector('.list_color h3 i'), chk: document.querySelectorAll('.list_color .color_chk') },
+    { btn: document.querySelector('.list_style h3 i'), chk: document.querySelectorAll('.list_style .style_chk') },
+    { btn: document.querySelector('.list_price h3 i'), chk: document.querySelectorAll('.list_price .price_chk') },
+    { btn: document.querySelector('.list_gender h3 i'), chk: document.querySelectorAll('.list_gender .gender_chk') }
+  ];
+
+
+  
+  resetButtons.forEach(({ btn, chk }) => {
+    btn.addEventListener('click', () => {
+      chk.forEach(chk => chk.checked = false);
+      itemList.forEach(item => item.style.display = 'block');
+    });
+  });
+  

@@ -71,10 +71,10 @@
           <i class="far fa-clock"></i>
           <span class="txt_hide">최근본상품</span>
         </li>
-        <li><span id="moveTop">
+        <li id="moveTop"><span>
           <i class="fas fa-chevron-up arrow"></i>
         </span></li>
-        <li><span id="moveBottom">
+        <li id="moveBottom"><span>
           <i class="fas fa-chevron-down arrow"></i>
         </span></li>
       </ul>
@@ -738,92 +738,79 @@
           <div class="bar"></div>
 
           <div class="sort_icon">
-            <i class="fas fa-th-large icon_active"></i>
-            <i class="fas fa-th"></i>
+            <i class="fas fa-th-large"></i>
+            <i class="fas fa-th  icon_active"></i>
           </div>
         </div>
       </div>
 
       <div id="sort_content">
         <ul class="list_box">
+
+
+          <!-- 전체 -->
           <li class="list list_all">
-            <h3>카테고리</h3>
+            <h3>카테고리<i class="fas fa-sync-alt"></i></h3>
             <ul>
               <li>
-                <input type="checkbox" id="all_chk01" class="all_chk" />
-                <label for="all_chk01">바람막이/아노락</label>
+                <input type="checkbox" name="all_chk" id="all_chk01" class="all_chk" />
+                <label for="all_chk01">아우터</label>
               </li>
 
               <li>
-                <input type="checkbox" id="all_chk02" class="all_chk" />
-                <label for="all_chk02">후드티/맨투맨</label>
+                <input type="checkbox"  name="all_chk" id="all_chk02" class="all_chk" />
+                <label for="all_chk02">티셔츠</label>
               </li>
 
               <li>
-                <input type="checkbox" id="all_chk03" class="all_chk" />
-                <label for="all_chk03">트레이닝 세트</label>
+                <input type="checkbox"   name="all_chk" id="all_chk03" class="all_chk" />
+                <label for="all_chk03">반바지</label>
+              </li> 
+
+              <li>
+                <input type="checkbox"  name="all_chk" id="all_chk04" class="all_chk" />
+                <label for="all_chk04">바람막이</label>
               </li>
 
               <li>
-                <input type="checkbox" id="all_chk04" class="all_chk" />
-                <label for="all_chk04">니트/스웨터</label>
+                <input type="checkbox"  name="all_chk" id="all_chk05" class="all_chk" />
+                <label for="all_chk05">트레이닝 세트</label>
               </li>
 
               <li>
-                <input type="checkbox" id="all_chk05" class="all_chk" />
-                <label for="all_chk05">티셔츠</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="all_chk06" class="all_chk" />
-                <label for="all_chk06">팬츠</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="all_chk07" class="all_chk" />
-                <label for="all_chk07">다운/폴리스</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="all_chk08" class="all_chk" />
-                <label for="all_chk08">온라인단독</label>
+                <input type="checkbox"  name="all_chk" id="all_chk06" class="all_chk" />
+                <label for="all_chk06">스윔웨어</label>
               </li>
             </ul>
           </li>
-          <!-- 전체 -->
+          
 
+          <!-- 스포츠 -->
           <li class="list list_sport">
-            <h3>스포츠</h3>
+            <h3>스포츠<i class="fas fa-sync-alt"></i></h3>
             <ul>
               <li>
-                <input type="checkbox" id="sport_chk01" class="sport_chk" />
+                <input type="checkbox" name="sport_chk" id="sport_chk01" class="sport_chk" />
                 <label for="sport_chk01">테니스</label>
               </li>
 
               <li>
-                <input type="checkbox" id="sport_chk02" class="sport_chk" />
+                <input type="checkbox" name="sport_chk" id="sport_chk02" class="sport_chk" />
                 <label for="sport_chk02">러닝</label>
               </li>
 
               <li>
-                <input type="checkbox" id="sport_chk03" class="sport_chk" />
-                <label for="sport_chk03">라이프 스타일</label>
+                <input type="checkbox" name="sport_chk" id="sport_chk03" class="sport_chk" />
+                <label for="sport_chk03">라이프스타일</label>
               </li>
 
-              <li>
-                <input type="checkbox" id="sport_chk04" class="sport_chk" />
-                <label for="sport_chk04">트레이닝</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="sport_chk05" class="sport_chk" />
-                <label for="sport_chk05">골프</label>
-              </li>
             </ul>
           </li>
 
+          
+          <!-- 색상 -->
           <li class="list list_color">
-            <h3>색상</h3>
+            <h3>색상<i class="fas fa-sync-alt"></i></h3>
 
             <ul class="color_box01">
               <li>
@@ -856,57 +843,37 @@
               </li>
             </ul>
           </li>
-          <!-- 색상 -->
 
-          <li class="list list_size">
-            <h3>사이즈</h3>
 
-            <ul class="size_box01">
-              <li>
-                <input type="checkbox" id="size_80" class="size_chk" />
-                <label for="size_80" class="size_txt">80</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="size_85" class="size_chk" />
-                <label for="size_85">85</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="size_90" class="size_chk" />
-                <label for="size_90">90</label>
-              </li>
-              <li>
-                <input type="checkbox" id="size_95" class="size_chk" />
-                <label for="size_95">95</label>
-              </li>
-            </ul>
-
-            <ul class="size_box02">
-              <li>
-                <input type="checkbox" id="size_100" class="size_chk" />
-                <label for="size_100" class="size_txt">100</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="size_105" class="size_chk" />
-                <label for="size_105">105</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="size_110" class="size_chk" />
-                <label for="size_110">110</label>
-              </li>
-              <li>
-                <input type="checkbox" id="size_115" class="size_chk" />
-                <label for="size_115">115</label>
-              </li>
-            </ul>
-          </li>
           <!-- 사이즈 -->
+          <li class="list list_style">
+            <h3>스타일<i class="fas fa-sync-alt"></i></h3>
 
+            <ul class="style_box01">
+              <li>
+                <input type="checkbox" name="style_chk" id="style_01" class="style_chk" />
+                <label for="style_01" class="style_txt">레귤러핏</label>
+              </li>
+
+              <li>
+                <input type="checkbox" name="style_chk" id="style_02" class="style_chk" />
+                <label for="style_02">컴포트핏</label>
+              </li>
+
+              <li>
+                <input type="checkbox"  name="style_chk" id="style_03" class="style_chk" />
+                <label for="style_03">오버핏</label>
+              </li>
+
+            </ul>
+
+
+          </li>
+
+
+          <!-- 가격 -->
           <li class="list list_price">
-            <h3>가격</h3>
+            <h3>가격<i class="fas fa-sync-alt"></i></h3>
             <ul>
               <li>
                 <input type="checkbox" id="price_chk01" class="price_chk" />
@@ -934,10 +901,11 @@
               </li>
             </ul>
           </li>
-          <!-- 가격 -->
 
+
+          <!-- 성별 -->
           <li class="list list_gender">
-            <h3>성별</h3>
+            <h3>성별<i class="fas fa-sync-alt"></i></h3>
             <ul>
               <li>
                 <input type="checkbox" id="gender_chk01" class="gender_chk" />
@@ -950,7 +918,8 @@
               </li>
             </ul>
           </li>
-          <!-- 가격 -->
+
+
         </ul>
       </div>
     </section>
@@ -965,6 +934,7 @@
           <div class="photo">
             <a href="./detail.html">
               <img src="" alt="item">
+              <div class="new">NEW</div>
             </a>
           </div>
 
@@ -981,7 +951,6 @@
               <div><i class="fas fa-heart"></i></div>
             </div>
 
-
           </div>
 
 
@@ -997,6 +966,7 @@
 
           <div class="photo">
             <a href="#"><img src="" alt="item">
+              <div class="new">NEW</div>
             </a>            
           </div>
 
@@ -1012,8 +982,9 @@
               <div><i class="fas fa-heart"></i></div>
             </div>
 
-
           </div>
+
+
 
           <button class="buy">
             BUY
@@ -1026,6 +997,7 @@
 
           <div class="photo">
             <a href="#"><img src="" alt="item">
+              <div class="new">NEW</div>
             </a>            
           </div>
 
@@ -1043,6 +1015,8 @@
 
 
           </div>
+
+
 
           <button class="buy">
             BUY
@@ -1437,7 +1411,7 @@
     </main>
     
 
-    <section class="pagination">
+<!--     <section class="pagination">
 
       <ul>
         <i class="fas fa-angle-double-left"></i>
@@ -1450,7 +1424,7 @@
       </ul>
 
     </section>
-
+ -->
 
 
 
