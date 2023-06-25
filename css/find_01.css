@@ -505,68 +505,99 @@ a{text-decoration: none;color: black;cursor: pointer;}
   
 
 
+/* ------------------ info ------------------ */
 
 
-
-/* ********************* wrap ***************************** */
-
-.wrap{
-    width: 830px;
-    margin: 0px auto 0;
-    display: flex;
-    padding: 250px 0;
-
+.info_tab {
+  width: 800px;
+  margin: 0px auto;
+  padding-top: 300px;
 }
 
-/* ********************* visual_main ***************************** */
-
-
-.wrap .visual_main img{
-    display: block;
-    width: 400px;
+.info_tab .tab_menu {
+  display: flex;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-
-
-/* ********************* login_form ***************************** */
-
-
-.wrap .login{
-    width: 400px;
-    margin-left: 30px;
-}
-
-.wrap .login .title{
-    text-align: center;
-    font-size: 30px;
-    margin: 10px 0 20px 0; 
+.info_tab .tab_menu .tab {
+  border: none;
+  background-color: #fff;
+  width: 33%;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #ccc;
+  border-right: none;
+  font-weight: bold;
+  font-size: 15px;
+  border-bottom: 2.5px solid #002053;
+  box-sizing: border-box;
 }
 
 
-.wrap .login .hr{
-    border-bottom: 1px solid #000;
-}
-
-.wrap .login .login_form{
-    margin-top: 30px;
-}
-
-.wrap .login .login_form .pw_hidden{
-    position: relative;
-}
-
-.wrap .login .login_form .pw_hidden i{
-    position: absolute;
-    right: 15px;
-    top: 18px;
+.info_tab .tab_menu .tab:last-child {
+  border-right: 1px solid #ccc;
 }
 
 
-/* ********************* login_input ***************************** */
+.info_tab .tab_menu .active01 {
+  border-right: 2.5px solid #002053;
+  border: 2px solid #002053;
+  border-bottom: none;
+  box-sizing: border-box;
+}
 
-.wrap .login .login_form .user_id,
-.wrap .login .login_form .user_pw{
-    width: 100%;height: 50px;
+
+.info_tab .tab_menu .active01:last-child {
+  border-right: 2.5px solid #002053;
+}
+
+
+
+.info_tab .tab_content .content {
+  width: 50%;
+  display: none;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+
+.info_tab .tab_content .active01 {
+  display: block;
+}
+
+.info_tab .tab_content .content01 {
+
+}
+
+
+.info_tab .tab_content .content02 {
+
+}
+
+
+
+
+
+.info_tab .tab_content .content03 {
+
+}
+
+
+
+
+
+
+
+/* ********************* 탭 1 아이디찾기 ***************************** */
+
+
+
+.tab_content .content01 .login_form .user_id,
+.tab_content .content01 .login_form .user_year{
+    width: 100%;
+    height: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
@@ -574,26 +605,25 @@ a{text-decoration: none;color: black;cursor: pointer;}
     font-size: 15px;
 }
 
-.wrap .login .login_form .user_chk{ 
+.tab_content .content01 .login_form .user_chk{ 
     width: 15px;
     height: 15px;
     margin-top: 10px;
 }
 
-.wrap .login .login_form .user_chk + label{
+.tab_content .content01 .login_form .user_chk + label{
     font-size: 15px;
     color: #494949;
 }
 
 
-/* ********************* login_btn ***************************** */
 
 
-.wrap .login .login_form .login_btn{
+.tab_content .content01 .login_form .login_btn{
     margin-top: 30px;
 }
 
-.wrap .login .login_form .login_btn ul li a button{
+.tab_content .content01 .login_form .login_btn ul li a button{
     width: 100%;height: 50px;
     border: 1px solid rgb(0,32,83);
     margin-bottom: 10px;
@@ -604,75 +634,126 @@ a{text-decoration: none;color: black;cursor: pointer;}
     cursor: pointer;
 }
 
-.wrap .login .login_form .login_btn ul li:nth-child(1) a button{
+.tab_content .content01 .login_form .login_btn ul li:nth-child(1) a button{
     background-color: rgb(0,32,83);
     color: white;
 
 }
 
-.wrap .login .login_form .login_btn ul li:nth-child(2) a button{
+.tab_content .content01 .login_form .login_btn ul li:nth-child(2) a button{
+    background-color: white;
+}
+
+
+/* ********************* 탭 2 비밀번호찾기 ***************************** */
+
+.tab_content .content02 .login_form .user_name,
+.tab_content .content02 .login_form .user_year,
+.tab_content .content02 .login_form .user_id{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.tab_content .content02 .login_form .user_chk{ 
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+}
+
+.tab_content .content02 .login_form .user_chk + label{
+    font-size: 15px;
+    color: #494949;
+}
+
+
+
+
+.tab_content .content02 .login_form .login_btn{
+    margin-top: 30px;
+}
+
+.tab_content .content02 .login_form .login_btn ul li a button{
+    width: 100%;height: 50px;
+    border: 1px solid rgb(0,32,83);
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tab_content .content02 .login_form .login_btn ul li:nth-child(1) a button{
+    background-color: rgb(0,32,83);
+    color: white;
+
+}
+
+.tab_content .content02 .login_form .login_btn ul li:nth-child(2) a button{
+    background-color: white;
+}
+
+
+/* ********************* 탭 3 비밀번호찾기 ***************************** */
+
+.tab_content .content03 .login_form .user_name,
+.tab_content .content03 .login_form .user_year,
+.tab_content .content03 .login_form .user_id{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.tab_content .content03 .login_form .user_chk{ 
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+}
+
+.tab_content .content03 .login_form .user_chk + label{
+    font-size: 15px;
+    color: #494949;
+}
+
+
+
+
+.tab_content .content03 .login_form .login_btn{
+    margin-top: 30px;
+}
+
+.tab_content .content03 .login_form .login_btn ul li a button{
+    width: 100%;height: 50px;
+    border: 1px solid rgb(0,32,83);
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tab_content .content03 .login_form .login_btn ul li:nth-child(1) a button{
+    background-color: rgb(0,32,83);
+    color: white;
+
+}
+
+.tab_content .content03 .login_form .login_btn ul li:nth-child(2) a button{
     background-color: white;
 }
 
 
 
-/* ********************* login_nav ***************************** */
-
-.wrap .login .login_form .login_nav{
-    margin-top: 20px;
-}
-.wrap .login .login_form .login_nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.wrap .login .login_form .login_nav ul li{
-    font-size: 13px;
-}
-
-
-.wrap .login .login_form .login_nav ul li:nth-child(2)::before,
-.wrap .login .login_form .login_nav ul li:nth-child(3)::before{
-    background-color: #ccc;
-    width: 1px;
-    height: 14px;
-    margin: 0 10px;
-    display: inline-block;
-    content: '';
-}
-
-/* ********************* login_sns ***************************** */
-
-.wrap .login .login_form .login_sns{
-    margin-top : 30px;
-}
-
-
-.wrap .login .login_form .login_sns h4 {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-  }
-
-.wrap .login .login_form .login_sns h4::before,
-.wrap .login .login_form .login_sns h4::after {
-    content: "";
-    background: rgba(0, 0, 0, 0.35);
-    height: 1px;
-    flex-grow: 2;
-    margin: 0px 16px;
-  }
-
-  .wrap .login .login_form .login_sns ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
-  }
-
-  .wrap .login .login_form .login_sns ul li img{
-    width: 50px;
-  }
 
   /* ********************* popup_info ***************************** */
 
@@ -721,9 +802,11 @@ a{text-decoration: none;color: black;cursor: pointer;}
   .popup_box .popup_info ul{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
   .popup_box .popup_info ul li h1{
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 30px;
   }

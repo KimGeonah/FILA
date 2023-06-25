@@ -127,8 +127,6 @@ $(window).scroll(function() {
   
   
   
-  
-
 
 
 
@@ -175,6 +173,16 @@ loginBtn.addEventListener('click', () => {
     }
 })
 
+//[바닐라자바스크립트] 로그인 enter 엔터기능 ------------------------------- 
+
+
+userPw.addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    loginBtn.click();
+  }
+});
+
 
 
 
@@ -193,3 +201,23 @@ icon.addEventListener('click', () => {
         userPw.setAttribute('type', 'password')
     }
 })
+
+
+
+
+
+/*팝업창 기능------------------------------------------------------------------------ */
+
+const popupBtn = document.querySelector('.popup_box .popup_btn');
+const popupInfo = document.querySelector('.popup_box .popup_info');
+let state = false;
+
+popupBtn.addEventListener('click', () => {
+  if (state === true) {
+    popupInfo.style.visibility = 'visible';
+    state = false;
+  } else {
+    popupInfo.style.visibility = 'hidden';
+    state = true;
+  }
+});

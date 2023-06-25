@@ -222,17 +222,19 @@ const items = [
 
 const info = [
   {
-    id: 'green123',
-    pw: '123456789'
+    id: 'hello',
+    idtext :'hello',
+    pw: 'world123',
+    name : '김건아',
+    year : '950115'
   }, 
   {
-    id: 'greenweb',
-    pw: '123456789'
-  },
-  {
-    id: 'gunnnna',
-    pw: '123456789'
-  },
+    id: 'fila',
+    idtext :'fila',
+    pw: '123456789',
+    name : '김휠라',
+    year : '980502'
+  }
 
 ]
 
@@ -241,4 +243,25 @@ const info = [
 
 //export default info
 
-export default { items, info };
+
+
+
+const  guest = [
+  {
+    id: 'guest01',
+    name : '김지현',
+    order : '20230001',
+    state : '배송준비중'
+  },
+  {
+    id: 'guest02',
+    name : '임지현',
+    order : '20230002',
+    state : '배송완료'
+  }
+]
+
+
+
+
+export default { items, info,guest };

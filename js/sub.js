@@ -114,12 +114,12 @@ const sortBtnIcon = document.querySelector("#sort i");
 const sortContent = document.querySelector("#sort_content");
 
 sortBtn.addEventListener('click',()=>{
-    if(sortContent.style.height == '0px'){
-        sortContent.style.height = '330px';
-        sortBtnIcon.setAttribute('class','fas fa-plus')
-    }else{
+    if(sortContent.style.height == '250px'){
         sortContent.style.height = '0px';
         sortBtnIcon.setAttribute('class','fas fa-minus')
+    }else{
+        sortContent.style.height = '250px';
+        sortBtnIcon.setAttribute('class','fas fa-plus')
     }
 })
 
@@ -245,7 +245,6 @@ pagination.forEach(function(page) {
 
 
 
-
  //[sort:바닐라] 카테코리 필터  -------------------------------------------------
 
 
@@ -258,24 +257,26 @@ pagination.forEach(function(page) {
  
  
  function updateAll() {
-   for (let i = 0; i < itemList.length; i++) {
-     const item = itemList[i];
-     if (allChk01.checked || allChk02.checked || allChk03.checked || allChk04.checked || allChk05.checked|| allChk06.checked) {
-       if ((allChk01.checked && items[i].type === '아우터') ||
-           (allChk02.checked && items[i].type === '티셔츠') ||
-           (allChk03.checked && items[i].type === '반바지') ||
-           (allChk04.checked && items[i].type === '바람막이') ||
-           (allChk05.checked && items[i].type === '트레이닝')||
-           (allChk06.checked && items[i].type === '스윔웨어')) {
-         item.style.display = 'block';
-       } else {
-         item.style.display = 'none';
-       }
-     } else {
-       item.style.display = 'block';
-     }
-   }
- }
+  for (let i = 0; i < itemList.length; i++) {
+    const item = itemList[i];
+    if (allChk01.checked || allChk02.checked || allChk03.checked || allChk04.checked || allChk05.checked|| allChk06.checked) {
+      if ((allChk01.checked && items[i].type === '아우터') ||
+          (allChk02.checked && items[i].type === '티셔츠') ||
+          (allChk03.checked && items[i].type === '반바지') ||
+          (allChk04.checked && items[i].type === '바람막이') ||
+          (allChk05.checked && items[i].type === '트레이닝')||
+          (allChk06.checked && items[i].type === '스윔웨어')) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    } else {
+      item.style.display = 'block';
+    }
+  }
+
+}
+
  
  allChk01.addEventListener('click', updateAll);
  allChk02.addEventListener('click', updateAll);
@@ -297,21 +298,21 @@ pagination.forEach(function(page) {
  
  
  function updateSport() {
-   for (let i = 0; i < itemList.length; i++) {
-     const item = itemList[i];
-     if (sportChk01.checked || sportChk02.checked || sportChk03.checked) {
-       if ((sportChk01.checked && items[i].sport === '테니스') ||
-           (sportChk02.checked && items[i].sport === '러닝') ||
-           (sportChk03.checked && items[i].sport === '라이프스타일')) {
-         item.style.display = 'block';
-       } else {
-         item.style.display = 'none';
-       }
-     } else {
-       item.style.display = 'block';
-     }
-   }
- }
+  for (let i = 0; i < itemList.length; i++) {
+    const item = itemList[i];
+    if (sportChk01.checked || sportChk02.checked || sportChk03.checked) {
+      if ((sportChk01.checked && items[i].sport === '테니스') ||
+          (sportChk02.checked && items[i].sport === '러닝') ||
+          (sportChk03.checked && items[i].sport === '라이프스타일')) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    } else {
+      item.style.display = 'block';
+    }
+  }
+}
  
  sportChk01.addEventListener('click', updateSport);
  sportChk02.addEventListener('click', updateSport);
@@ -402,11 +403,15 @@ pagination.forEach(function(page) {
  const priceChk03 = document.querySelector('#price_chk03'); //49 - 59
  const priceChk04 = document.querySelector('#price_chk04'); //59 - 79
  const priceChk05 = document.querySelector('#price_chk05'); //79 이상
- 
+
 
  
  
+ const itemNone = document.querySelector('.item_none');
+
  function updateprice() {
+   let hasVisibleItems = false;
+   
    for (let i = 0; i < itemList.length; i++) {
      const item = itemList[i];
      if (priceChk01.checked || priceChk02.checked || priceChk03.checked || priceChk04.checked|| priceChk05.checked) {
@@ -416,12 +421,20 @@ pagination.forEach(function(page) {
            (priceChk04.checked && 59000 < items[i].priceNum && items[i].priceNum <= 79000) ||
            (priceChk05.checked && 79000 < items[i].priceNum )) {
          item.style.display = 'block';
+         hasVisibleItems = true;
        } else {
          item.style.display = 'none';
        }
      } else {
        item.style.display = 'block';
+       hasVisibleItems = true;
      }
+   }
+   
+   if (hasVisibleItems) {
+     itemNone.style.display = 'none';
+   } else {
+     itemNone.style.display = 'block';
    }
  }
  
@@ -429,10 +442,8 @@ pagination.forEach(function(page) {
  priceChk02.addEventListener('click', updateprice);
  priceChk03.addEventListener('click', updateprice);
  priceChk04.addEventListener('click', updateprice);
- priceChk05.addEventListener('click', updateprice);5
-
-
-
+ priceChk05.addEventListener('click', updateprice);
+ 
 
 
 
@@ -505,3 +516,18 @@ pagination.forEach(function(page) {
     });
   });
   
+
+    //[상품정렬] 높은가격순 -------------------------------------------------
+
+    const highPrice = document.querySelector('#select .high_price');
+    const itemContainer = document.querySelector('.item_list');
+    
+    highPrice.addEventListener('click', () => {
+      items.sort((a, b) => a.priceNum - b.priceNum);
+    
+      items.forEach(item => {
+        const itemElement = document.querySelector(`.item.${item.id}`);
+        itemContainer.appendChild(itemElement);
+      });
+    });
+    
